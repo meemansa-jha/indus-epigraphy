@@ -1,6 +1,6 @@
 # Indus Epigraphy AI
 
-Computational epigraphy of the undeciphered Indus Valley script (BITS Pilani course project).
+Computational epigraphy of the undeciphered Indus Valley script.
 We treat the script as a **notational information system** and measure its structure; we do
 **not** claim a decipherment, and sign IDs are opaque labels throughout.
 
