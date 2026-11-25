@@ -1,0 +1,49 @@
+# ---- data: never committed (see DATA_SOURCES.md for how to obtain it) ----
+data/raw/*
+data/processed/*
+!data/**/.gitkeep
+
+# ---- model weights (regenerate with the training scripts) ----
+*.pth
+*.pt
+checkpoints/
+yolov8n.pt
+
+# ---- derived files that embed corpus content or third-party images ----
+# contains corpus sign sequences; rebuilt by run_all.py
+src/m3_masking/artifacts/splits.json
+# overlays on museum photographs
+reports/figures/batch/
+# overlays on Indus-Seal-Dataset images
+reports/figures/strips/
+reports/figures/read_*.png
+reports/figures/detect_*.png
+reports/figures/dbg_*.png
+reports/review.html
+reports/strip_review.html
+reports/engine/real_examples/
+*.zip
+
+# ---- training debris ----
+runs/**/train_batch*.jpg
+runs/**/val_batch*.jpg
+
+# ---- python / editor / os ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+
+# ---- figures containing third-party photographs: check licences before publishing ----
+reports/deck_figures/
+
+# demo package (built by tools/make_demo_zip.py)
+dist/
+
+# personal / generated folders
+Claude outputs/
+reports/demo/
+# contains an absolute local path
+runs/**/args.yaml

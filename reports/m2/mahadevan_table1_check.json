@@ -1,0 +1,47 @@
+{
+ "source": "The Indus Script. Text, Concordance and Tables -Iravathan Mahadevan_djvu.txt",
+ "rows_recovered": 307,
+ "rows_expected": 417,
+ "tokens_recovered": 9280,
+ "tokens_published": 13372,
+ "mahadevan_aggregate_position_shares": {
+  "solo": 0.014,
+  "initial": 0.217,
+  "medial": 0.523,
+  "final": 0.246
+ },
+ "our_corpus_aggregate_position_shares": {
+  "solo": 0.027,
+  "initial": 0.242,
+  "medial": 0.489,
+  "final": 0.242
+ },
+ "jar_sign_IM77_342": {
+  "mahadevan_counts": {
+   "solo": 3,
+   "initial": 1,
+   "medial": 420,
+   "final": 971,
+   "total": 1395
+  },
+  "mahadevan_shares": {
+   "solo": 0.002,
+   "initial": 0.001,
+   "medial": 0.301,
+   "final": 0.696
+  },
+  "our_counts": {
+   "solo": 11,
+   "initial": 6,
+   "medial": 412,
+   "final": 929
+  },
+  "our_shares": {
+   "solo": 0.008,
+   "initial": 0.004,
+   "medial": 0.303,
+   "final": 0.684
+  }
+ },
+ "mahadevan_most_frequent_is_final_dominant": true
+}

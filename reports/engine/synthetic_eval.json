@@ -1,0 +1,2707 @@
+{
+ "n_images": 100,
+ "seconds": 11,
+ "detection": {
+  "count_exact": 0.8,
+  "mean_abs_count_error": 0.29,
+  "signs_true": 412,
+  "signs_detected": 435
+ },
+ "recognition_on_count_matched": {
+  "images": 80,
+  "signs": 340,
+  "top1": 0.8794117647058823,
+  "top5": 0.9676470588235294,
+  "exact_sequence": 0.7
+ },
+ "m4_flag_rate": {
+  "image_route": 0.20202020202020202,
+  "typed_route": 0.09
+ },
+ "median_pppl": {
+  "image_route": 60.99060026136404,
+  "typed_route": 25.34447325611263
+ },
+ "rows": [
+  {
+   "image": "syn_000.png",
+   "n_true": 5,
+   "n_pred": 6,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 135.0148353489009,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 91.73694266343972,
+   "bits_image": 29.910001573609822,
+   "bits_typed": 42.9161209674207
+  },
+  {
+   "image": "syn_001.png",
+   "n_true": 2,
+   "n_pred": 2,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 462.0506305541105,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 183.2443677368503,
+   "bits_image": 22.42223475289804,
+   "bits_typed": 22.634642009689593,
+   "top1": [
+    true,
+    false
+   ],
+   "top5": [
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    false
+   ]
+  },
+  {
+   "image": "syn_002.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 6.544185798746254,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 6.544185798746254,
+   "bits_image": 15.026232336365993,
+   "bits_typed": 15.026232336365993,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_003.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 8.888748487333498,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 8.888748487333498,
+   "bits_image": 12.560566526168417,
+   "bits_typed": 12.560566526168417,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_004.png",
+   "n_true": 2,
+   "n_pred": 3,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 1049.938685831222,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 328.9093355403367,
+   "bits_image": 28.366198401152555,
+   "bits_typed": 18.731802966564917
+  },
+  {
+   "image": "syn_005.png",
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 66.35650513957012,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 28.140110677557892,
+   "bits_image": 26.470047547131138,
+   "bits_typed": 34.182289575731616,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_006.png",
+   "n_true": 8,
+   "n_pred": 8,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 14.577204587022555,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 9.188219729229093,
+   "bits_image": 46.52379466664494,
+   "bits_typed": 44.54895429536142,
+   "top1": [
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_007.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 167.6828054933773,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 17.92018946901924,
+   "bits_image": 34.213276050408446,
+   "bits_typed": 24.856011556005758,
+   "top1": [
+    true,
+    false,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_008.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 30.518699038437926,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 16.73923678541187,
+   "bits_image": 27.61773094021075,
+   "bits_typed": 24.55751947690949,
+   "top1": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "image": "syn_009.png",
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 29.389464224249302,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 29.389464224249302,
+   "bits_image": 37.605278588668675,
+   "bits_typed": 37.605278588668675,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_010.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 4.322878286634671,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 4.322878286634671,
+   "bits_image": 12.734777214197976,
+   "bits_typed": 12.734777214197976,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_011.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 22.71831951230247,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 8.098872849448423,
+   "bits_image": 33.86390335832504,
+   "bits_typed": 25.402040523691028,
+   "top1": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_012.png",
+   "n_true": 2,
+   "n_pred": 2,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 1226.3206856797426,
+   "verdict_typed": "flagged: noise-like",
+   "pppl_typed": 1226.3206856797426,
+   "bits_image": 21.837158418954306,
+   "bits_typed": 21.837158418954306,
+   "top1": [
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_013.png",
+   "n_true": 5,
+   "n_pred": 6,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 9.06168125814462,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 5.357978873938458,
+   "bits_image": 24.540709308709115,
+   "bits_typed": 17.65684951929275
+  },
+  {
+   "image": "syn_014.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 1894.556894765005,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 430.2425407395711,
+   "bits_image": 25.471592589485486,
+   "bits_typed": 38.50033415176607,
+   "top1": [
+    false,
+    false,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    false,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_015.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 422.9911086643291,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 422.9911086643291,
+   "bits_image": 28.877063704922815,
+   "bits_typed": 28.877063704922815,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_016.png",
+   "n_true": 7,
+   "n_pred": 7,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 14.038981752825109,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 11.049713606163957,
+   "bits_image": 33.88032623792593,
+   "bits_typed": 33.14594845587196,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    false,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_017.png",
+   "n_true": 8,
+   "n_pred": 8,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 3.4161781863681235,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 2.8415853245258327,
+   "bits_image": 15.360219006451524,
+   "bits_typed": 28.74356930229878,
+   "top1": [
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    false
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "image": "syn_018.png",
+   "n_true": 2,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 297.8610225372005,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 87.50056043627266,
+   "bits_image": 10.123039852360414,
+   "bits_typed": 14.2060563364693
+  },
+  {
+   "image": "syn_019.png",
+   "n_true": 2,
+   "n_pred": 2,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 832.4966385148036,
+   "verdict_typed": "flagged: noise-like",
+   "pppl_typed": 832.4966385148036,
+   "bits_image": 22.849140425078456,
+   "bits_typed": 22.849140425078456,
+   "top1": [
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_020.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 8.444896058036317,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 11.064377182462714,
+   "bits_image": 18.64174008317136,
+   "bits_typed": 24.216830153749594,
+   "top1": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_021.png",
+   "n_true": 3,
+   "n_pred": 4,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 1459.6404775276217,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 93.11762785518422,
+   "bits_image": 44.533099485944135,
+   "bits_typed": 28.28092711827664
+  },
+  {
+   "image": "syn_022.png",
+   "n_true": 2,
+   "n_pred": 2,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 1793.1768805174713,
+   "verdict_typed": "flagged: noise-like",
+   "pppl_typed": 1793.1768805174713,
+   "bits_image": 20.77002056057039,
+   "bits_typed": 20.77002056057039,
+   "top1": [
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_023.png",
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 5.120695893985805,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 5.120695893985805,
+   "bits_image": 25.485067088419868,
+   "bits_typed": 25.485067088419868,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_024.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 33.71953720429045,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 33.71953720429045,
+   "bits_image": 23.82190302300015,
+   "bits_typed": 23.82190302300015,
+   "top1": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_025.png",
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 194.2209780335225,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 368.0779446156097,
+   "bits_image": 51.61598164089016,
+   "bits_typed": 51.627867746707494,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_026.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 3.7086476736427176,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 3.436413672404863,
+   "bits_image": 22.234165306281017,
+   "bits_typed": 21.390923000338308,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_027.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 76.19136555657761,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 2.732792114959658,
+   "bits_image": 29.470154344098802,
+   "bits_typed": 18.07237938077406,
+   "top1": [
+    true,
+    false,
+    false,
+    true,
+    false
+   ],
+   "top5": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "image": "syn_028.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 5.970889827294533,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 247.40176902848518,
+   "bits_image": 16.893134786343115,
+   "bits_typed": 32.005498076693534,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_029.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 8.447654738999624,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 8.447654738999624,
+   "bits_image": 22.091109956594817,
+   "bits_typed": 22.091109956594817,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_030.png",
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 10.032071867062688,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 14.643555889920552,
+   "bits_image": 13.919638248834508,
+   "bits_typed": 31.937571088849417,
+   "top1": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_031.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 3.433276025105733,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 3.0387674641279143,
+   "bits_image": 16.726708534307576,
+   "bits_typed": 16.606080475660903,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_032.png",
+   "n_true": 3,
+   "n_pred": 4,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 4401.880319751611,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 1.621324352625864,
+   "bits_image": 45.77898605778606,
+   "bits_typed": 10.925774361987948
+  },
+  {
+   "image": "syn_033.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 323.77431880521493,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 274.90638626758704,
+   "bits_image": 35.59381550977074,
+   "bits_typed": 37.187272419174235,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_034.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 45.16529794566428,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 28.61004731535151,
+   "bits_image": 28.827118547220152,
+   "bits_typed": 22.874473424465922,
+   "top1": [
+    true,
+    true,
+    false,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_035.png",
+   "n_true": 2,
+   "n_pred": 2,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 1202.2602829219886,
+   "verdict_typed": "flagged: noise-like",
+   "pppl_typed": 4027.684703196267,
+   "bits_image": 24.0392214018282,
+   "bits_typed": 26.73065898163976,
+   "top1": [
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    false,
+    false
+   ]
+  },
+  {
+   "image": "syn_036.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 470.2278027052106,
+   "verdict_typed": "flagged: noise-like",
+   "pppl_typed": 938.6807657504927,
+   "bits_image": 33.38456880534242,
+   "bits_typed": 33.592853092292096,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_037.png",
+   "n_true": 2,
+   "n_pred": 2,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 736.5932216120456,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 29.8935631943926,
+   "bits_image": 13.58884081757226,
+   "bits_typed": 12.177725634881234,
+   "top1": [
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_038.png",
+   "n_true": 10,
+   "n_pred": 10,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 17.532253988761628,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 7.302880025173217,
+   "bits_image": 50.19303828563472,
+   "bits_typed": 46.21656609987144,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_039.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 275.19893606991343,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 275.19893606991343,
+   "bits_image": 27.177258846168005,
+   "bits_typed": 27.177258846168005,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_040.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 9.700674363250837,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 9.700674363250837,
+   "bits_image": 13.456710361671915,
+   "bits_typed": 13.456710361671915,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_041.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 2.7342848605926435,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 2.5589105573498356,
+   "bits_image": 18.05459602644977,
+   "bits_typed": 17.933967967803095,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_042.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 18.10089204429736,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 18.10089204429736,
+   "bits_image": 17.8815313821095,
+   "bits_typed": 17.8815313821095,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_043.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 16.1446894955975,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 4.663577431047568,
+   "bits_image": 14.539723020549385,
+   "bits_typed": 19.546164651449818,
+   "top1": [
+    true,
+    true,
+    false,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    false,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_044.png",
+   "n_true": 7,
+   "n_pred": 6,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 459.50230486589686,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 188.39905941446807,
+   "bits_image": 54.543814061645,
+   "bits_typed": 57.27953105019975
+  },
+  {
+   "image": "syn_045.png",
+   "n_true": 9,
+   "n_pred": 10,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 9.606010438419865,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 4.748829585721453,
+   "bits_image": 45.58008912068342,
+   "bits_typed": 32.90129860248796
+  },
+  {
+   "image": "syn_046.png",
+   "n_true": 2,
+   "n_pred": 2,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 9.360755624080275,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 36.883827795474424,
+   "bits_image": 10.951156327385654,
+   "bits_typed": 14.278030725177317,
+   "top1": [
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    false
+   ]
+  },
+  {
+   "image": "syn_047.png",
+   "n_true": 2,
+   "n_pred": 3,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 4354.905543237547,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 9.076595001095507,
+   "bits_image": 10.284282754965524,
+   "bits_typed": 8.578074362465333
+  },
+  {
+   "image": "syn_048.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 3.5100458651990594,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 3.5100458651990594,
+   "bits_image": 13.335754463309035,
+   "bits_typed": 13.335754463309035,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_049.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 65.08659745212775,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 24.776418509097976,
+   "bits_image": 44.35120414003633,
+   "bits_typed": 38.40649839101425,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_050.png",
+   "n_true": 2,
+   "n_pred": 2,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 564.844898367501,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 28.18572320194072,
+   "bits_image": 19.05849365730735,
+   "bits_typed": 15.069197951124206,
+   "top1": [
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_051.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 60.99060026136404,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 65.28466717040955,
+   "bits_image": 21.26527574986688,
+   "bits_typed": 20.707936897177202,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_052.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 3.246028630581182,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 3.246028630581182,
+   "bits_image": 18.87031471168012,
+   "bits_typed": 18.87031471168012,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_053.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 3.5002847347325328,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 3.5002847347325328,
+   "bits_image": 12.492177795699236,
+   "bits_typed": 12.492177795699236,
+   "top1": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_054.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 233.19660147699605,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 233.19660147699605,
+   "bits_image": 32.493104886702504,
+   "bits_typed": 32.493104886702504,
+   "top1": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_055.png",
+   "n_true": 2,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 49.7372196444333,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 12.719357811459687,
+   "bits_image": 13.960138502868258,
+   "bits_typed": 13.120261319755683
+  },
+  {
+   "image": "syn_056.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 41.07290007990091,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 57.256240632563035,
+   "bits_image": 28.165724532961487,
+   "bits_typed": 29.617813106941018,
+   "top1": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "image": "syn_057.png",
+   "n_true": 3,
+   "n_pred": 7,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 605.1412130020577,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 80.7368359046453,
+   "bits_image": 69.45236336033437,
+   "bits_typed": 29.360603894422724
+  },
+  {
+   "image": "syn_058.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 33.17796317677859,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 2.4359670720623385,
+   "bits_image": 29.299886478654766,
+   "bits_typed": 15.05140548052858,
+   "top1": [
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    false,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_059.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 727.9698088988614,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 3.6771987333177387,
+   "bits_image": 26.555108556824468,
+   "bits_typed": 18.246137479791297,
+   "top1": [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    false,
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_060.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 916.0332835824541,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 310.41848169115667,
+   "bits_image": 35.5734215154483,
+   "bits_typed": 32.01503351966334,
+   "top1": [
+    true,
+    true,
+    true,
+    false
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "image": "syn_061.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 50.29630306377332,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 50.29630306377332,
+   "bits_image": 23.074964562517184,
+   "bits_typed": 23.074964562517184,
+   "top1": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_062.png",
+   "n_true": 2,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 205.78514564818317,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 9.936889350547398,
+   "bits_image": 26.44230485640354,
+   "bits_typed": 15.821787330273587
+  },
+  {
+   "image": "syn_063.png",
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 72.69132936544781,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 32.45167972105886,
+   "bits_image": 43.65326904850492,
+   "bits_typed": 43.52372633739426,
+   "top1": [
+    true,
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_064.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 117.88864370929844,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 117.6593958981815,
+   "bits_image": 45.98667414065657,
+   "bits_typed": 46.55563375042335,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "image": "syn_065.png",
+   "n_true": 2,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 201.56189114155424,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 63.040054994054614,
+   "bits_image": 28.337599168452947,
+   "bits_typed": 16.099870141357
+  },
+  {
+   "image": "syn_066.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 1244.4646429787917,
+   "verdict_typed": "flagged: noise-like",
+   "pppl_typed": 1244.4646429787917,
+   "bits_image": 30.364364539684352,
+   "bits_typed": 30.364364539684352,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_067.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 94.4087003869162,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 94.4087003869162,
+   "bits_image": 21.11155163441884,
+   "bits_typed": 21.11155163441884,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_068.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 255.78508850736003,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 25.912528003127285,
+   "bits_image": 45.47835970140314,
+   "bits_typed": 31.848283146759986,
+   "top1": [
+    true,
+    true,
+    true,
+    false
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "image": "syn_069.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 3.8141134649870607,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 3.8141134649870607,
+   "bits_image": 21.194489850965944,
+   "bits_typed": 21.194489850965944,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_070.png",
+   "n_true": 10,
+   "n_pred": 10,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 1500.7178597743111,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 120.88728057942089,
+   "bits_image": 83.24790915842746,
+   "bits_typed": 72.62466036403617,
+   "top1": [
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "top5": [
+    false,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "image": "syn_071.png",
+   "n_true": 2,
+   "n_pred": 3,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 1264.6935915266354,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 64.04703008648795,
+   "bits_image": 30.693083557198715,
+   "bits_typed": 13.202084218098943
+  },
+  {
+   "image": "syn_072.png",
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 17.739594338174594,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 19.63492086605545,
+   "bits_image": 42.987938532700795,
+   "bits_typed": 42.46713505719315,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    false,
+    true,
+    false,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_073.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 18.27865708721095,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 22.57577379656519,
+   "bits_image": 26.221657076910642,
+   "bits_typed": 26.954361931729245,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_074.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 11.875049727502486,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 11.875049727502486,
+   "bits_image": 18.102105261441142,
+   "bits_typed": 18.102105261441142,
+   "top1": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_075.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 81.3928565023772,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 19.61036152840907,
+   "bits_image": 12.012355235333292,
+   "bits_typed": 19.88472566136476,
+   "top1": [
+    false,
+    true,
+    false
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "image": "syn_076.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 3.6491042964595364,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 3.6491042964595364,
+   "bits_image": 20.768457550369895,
+   "bits_typed": 20.768457550369895,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_077.png",
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 3.305675286794291,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 3.2138939111699587,
+   "bits_image": 24.848943240720445,
+   "bits_typed": 24.728315182073768,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_078.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 2.4784597880046744,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 2.8926113999052023,
+   "bits_image": 19.09763267066516,
+   "bits_typed": 18.634890997618328,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "image": "syn_079.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 2.506151059847958,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 2.506151059847958,
+   "bits_image": 18.205617309685337,
+   "bits_typed": 18.205617309685337,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_080.png",
+   "n_true": 8,
+   "n_pred": 7,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 30.730099194523305,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 46.78986968312789,
+   "bits_image": 43.60434632128217,
+   "bits_typed": 50.56650940232594
+  },
+  {
+   "image": "syn_081.png",
+   "n_true": 2,
+   "n_pred": 2,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 251.19783617533665,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 251.19783617533665,
+   "bits_image": 17.833400328379554,
+   "bits_typed": 17.833400328379554,
+   "top1": [
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_082.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 79.43788986139292,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 179.45453952531432,
+   "bits_image": 29.368300409133372,
+   "bits_typed": 29.61992488943491,
+   "top1": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "image": "syn_083.png",
+   "n_true": 6,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 293.88678584710357,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 17.308814002879586,
+   "bits_image": 43.17130861725494,
+   "bits_typed": 32.59360017687819
+  },
+  {
+   "image": "syn_084.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 5.7205274572080995,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 9.511233496257,
+   "bits_image": 15.828253339314982,
+   "bits_typed": 17.49393317056151,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_085.png",
+   "n_true": 2,
+   "n_pred": 3,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 4963.9784781183935,
+   "verdict_typed": "flagged: noise-like",
+   "pppl_typed": 7163.355029886255,
+   "bits_image": 33.17913738841065,
+   "bits_typed": 24.11584038517986
+  },
+  {
+   "image": "syn_086.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 5.885790687059928,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 5.885790687059928,
+   "bits_image": 15.394849690457761,
+   "bits_typed": 15.394849690457761,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_087.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 3.399873504233557,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 3.399873504233557,
+   "bits_image": 15.509083255917862,
+   "bits_typed": 15.509083255917862,
+   "top1": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_088.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 674.6007090746186,
+   "verdict_typed": "flagged: noise-like",
+   "pppl_typed": 674.6007090746186,
+   "bits_image": 26.64465543267959,
+   "bits_typed": 26.64465543267959,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_089.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 25.306790599310176,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 7.5998433847782225,
+   "bits_image": 23.210244880167625,
+   "bits_typed": 22.021975805297092,
+   "top1": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_090.png",
+   "n_true": 2,
+   "n_pred": 2,
+   "verdict_image": "not enough readable signs (need >= 2)",
+   "pppl_image": null,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 102.7482089187493,
+   "bits_image": 0.5539235340774125,
+   "bits_typed": 12.203549943255819,
+   "top1": [
+    false,
+    true
+   ],
+   "top5": [
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_091.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 2.1070806588241457,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 1.963253434874852,
+   "bits_image": 14.448210017805005,
+   "bits_typed": 14.32758195915833,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_092.png",
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 890.0668775230404,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 67.80855789441462,
+   "bits_image": 50.76683397698236,
+   "bits_typed": 27.01550182441887,
+   "top1": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "image": "syn_093.png",
+   "n_true": 2,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 405.40767681589665,
+   "verdict_typed": "flagged: noise-like",
+   "pppl_typed": 1641.9010955055066,
+   "bits_image": 33.10608553839981,
+   "bits_typed": 19.30386037719144
+  },
+  {
+   "image": "syn_094.png",
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 268.5012704459697,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 216.09743488904368,
+   "bits_image": 24.145030644074964,
+   "bits_typed": 24.884996611455286,
+   "top1": [
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_095.png",
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 31.707404563886776,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 32.907816700200335,
+   "bits_image": 27.666729801723417,
+   "bits_typed": 23.170835046440267,
+   "top1": [
+    true,
+    false,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "image": "syn_096.png",
+   "n_true": 2,
+   "n_pred": 2,
+   "verdict_image": "flagged: noise-like",
+   "pppl_image": 4018.217719416929,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 68.49876248101731,
+   "bits_image": 21.78745354316575,
+   "bits_typed": 14.263276589202087,
+   "top1": [
+    true,
+    false
+   ],
+   "top5": [
+    true,
+    true
+   ],
+   "exact_sequence": false,
+   "wells_match": [
+    true,
+    false
+   ]
+  },
+  {
+   "image": "syn_097.png",
+   "n_true": 2,
+   "n_pred": 4,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 316.76081840412405,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 26.645875209306443,
+   "bits_image": 17.341254989305163,
+   "bits_typed": 14.296186626021122
+  },
+  {
+   "image": "syn_098.png",
+   "n_true": 3,
+   "n_pred": 5,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 86.61428999718399,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 10.559525123672312,
+   "bits_image": 53.571646858055836,
+   "bits_typed": 13.90959051334118
+  },
+  {
+   "image": "syn_099.png",
+   "n_true": 7,
+   "n_pred": 7,
+   "verdict_image": "consistent with real inscriptions",
+   "pppl_image": 6.621890346942004,
+   "verdict_typed": "consistent with real inscriptions",
+   "pppl_typed": 6.621890346942004,
+   "bits_image": 38.99683929189037,
+   "bits_typed": 38.99683929189037,
+   "top1": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "top5": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact_sequence": true,
+   "wells_match": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  }
+ ]
+}

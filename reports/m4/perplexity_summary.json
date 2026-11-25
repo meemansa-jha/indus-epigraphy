@@ -1,0 +1,112 @@
+{
+ "real": {
+  "n_inscriptions": 308,
+  "median_ppl_transformer_ci95": [
+   16.53045654296875,
+   26.89175033569336
+  ],
+  "median_ppl_bigram_ci95": [
+   18.596219564423123,
+   33.991366203839995
+  ],
+  "median_ppl_transformer": 19.622638702392578,
+  "median_ppl_bigram": 25.181592483305913,
+  "corpus_ppl_transformer": 24.190898495588744,
+  "corpus_ppl_bigram": 29.149104853662802,
+  "bits_per_sign_transformer": 4.596392449614757,
+  "confidence": {
+   "n_predictions": 1267,
+   "share_high": 0.23204419889502761,
+   "accuracy_when_high": 0.7517006802721088,
+   "top1": 0.34175217048145223
+  }
+ },
+ "shuffled": {
+  "n_inscriptions": 308,
+  "median_ppl_transformer_ci95": [
+   190.0687255859375,
+   257.5804138183594
+  ],
+  "median_ppl_bigram_ci95": [
+   254.1394647701239,
+   383.3271978644081
+  ],
+  "median_ppl_transformer": 224.28871154785156,
+  "median_ppl_bigram": 306.1866672716299,
+  "corpus_ppl_transformer": 205.72611877702562,
+  "corpus_ppl_bigram": 279.9685445700234,
+  "bits_per_sign_transformer": 7.684581158348267,
+  "confidence": {
+   "n_predictions": 1267,
+   "share_high": 0.10023677979479084,
+   "accuracy_when_high": 0.16535433070866143,
+   "top1": 0.08129439621152329
+  }
+ },
+ "markov": {
+  "n_inscriptions": 308,
+  "median_ppl_transformer_ci95": [
+   47.670597076416016,
+   67.77991485595703
+  ],
+  "median_ppl_bigram_ci95": [
+   20.348687355940665,
+   30.79814750286456
+  ],
+  "median_ppl_transformer": 54.225887298583984,
+  "median_ppl_bigram": 24.72132392781564,
+  "corpus_ppl_transformer": 56.63848998095288,
+  "corpus_ppl_bigram": 25.041917215093797,
+  "bits_per_sign_transformer": 5.823710897631177,
+  "confidence": {
+   "n_predictions": 1312,
+   "share_high": 0.18216463414634146,
+   "accuracy_when_high": 0.5313807531380753,
+   "top1": 0.23704268292682926
+  }
+ },
+ "freq_random": {
+  "n_inscriptions": 308,
+  "median_ppl_transformer_ci95": [
+   433.08642578125,
+   591.3947143554688
+  ],
+  "median_ppl_bigram_ci95": [
+   431.17791074980715,
+   573.8149132673664
+  ],
+  "median_ppl_transformer": 504.10693359375,
+  "median_ppl_bigram": 496.7883734818489,
+  "corpus_ppl_transformer": 469.82264175018605,
+  "corpus_ppl_bigram": 462.15957782133347,
+  "bits_per_sign_transformer": 8.875972431335981,
+  "confidence": {
+   "n_predictions": 1312,
+   "share_high": 0.09375,
+   "accuracy_when_high": 0.056910569105691054,
+   "top1": 0.02972560975609756
+  }
+ },
+ "uniform_random": {
+  "n_inscriptions": 308,
+  "median_ppl_transformer_ci95": [
+   2655.029541015625,
+   3570.89111328125
+  ],
+  "median_ppl_bigram_ci95": [
+   3540.6452771516097,
+   4296.07174437021
+  ],
+  "median_ppl_transformer": 2995.24951171875,
+  "median_ppl_bigram": 3890.8600244284116,
+  "corpus_ppl_transformer": 2927.187035989745,
+  "corpus_ppl_bigram": 3743.5621119094367,
+  "bits_per_sign_transformer": 11.515299216016524,
+  "confidence": {
+   "n_predictions": 1312,
+   "share_high": 0.07850609756097561,
+   "accuracy_when_high": 0.0,
+   "top1": 0.003048780487804878
+  }
+ }
+}

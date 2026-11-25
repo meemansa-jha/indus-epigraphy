@@ -1,0 +1,1 @@
+{"temperature": 1.1500000000000006, "rating": [[0.5, "High"], [0.2, "Medium"], [0.0, "Low"]], "best_cfg": {"d": 64, "layers": 2, "heads": 4, "ff": 128, "dropout": 0.2}, "seeds": [0, 1, 2]}

@@ -1,0 +1,223 @@
+% CS F407 Artificial Intelligence: final project report template.
+% Limit: 2 pages, including everything except references.
+% Do not change the font size, margins or spacing.
+\documentclass[11pt,a4paper,twocolumn]{article}
+
+\usepackage[margin=2cm,columnsep=0.8cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\titleformat{\section}{\normalsize\bfseries}{\thesection}{0.6em}{}
+\titlespacing*{\section}{0pt}{1.2ex plus 0.3ex}{0.6ex}
+\setlist{nosep,leftmargin=*}
+\setlength{\parskip}{0.3ex}
+
+\newcommand{\coursename}{CS F407 Artificial Intelligence, AY 2026--27 Semester I}
+\newcommand{\teamno}{Team AI Tools}
+\newcommand{\githuburl}{https://github.com/meemansa-jha/indus-epigraphy}
+
+\begin{document}
+
+\twocolumn[{%
+\begin{center}
+  {\large\bfseries Computational Epigraphy of the Indus Script: An End-to-End Parsing Engine\\with Hallucination Guardrails}\\[1ex]
+  \teamno\\
+  Meemansa Jha (2024B4A71096G), Aarush Chugh (2024B4A71127G), Tanmai Chekuri (2024ADPS0841G)\\[0.5ex]
+  {\small \coursename, BITS Pilani, K.K. Birla Goa Campus}\\[1.5ex]
+  \begin{minipage}{0.85\textwidth}
+    \small
+    \centerline{\bfseries Abstract}\vspace{0.5ex}
+    The Indus script has no bilingual text and averages five signs per inscription, so we study its
+    structure rather than attempt decipherment. Our parsing engine takes a seal image or typed sequence
+    through four stages: a YOLOv8 + MobileNetV3 pipeline that outputs ordered sign IDs; a Witten--Bell
+    Markov model that establishes right-to-left reading (flip test $p<10^{-4}$, replicated on a corpus
+    20$\times$ larger); a calibrated masked Transformer that restores damaged signs (33.3\% top-1,
+    significantly above a smoothed bigram); and a guardrail benchmark that separates real inscriptions
+    from random sequences (AUC up to 0.98) and shows that fluent fakes are not evidence of meaning.
+  \end{minipage}
+\end{center}
+\vspace{1.5ex}
+}]
+
+\section{Introduction}
+The Indus script (c.~2600--1900 BCE) survives in about 4,000 short inscriptions with no bilingual
+key~\cite{mahadevan1977}. Following the project brief, we study its structure (reading direction,
+positional rules, collocations, predictability) and test which claims about it are supported.
+\textbf{Input:} a seal photograph or a typed sequence in any of three sign numberings. \textbf{Output:}
+ordered sign IDs, a positional $n$-gram report, a restoration probability with alternatives for every
+sign, and a verdict on whether the text is statistically consistent with real inscriptions.
+\textbf{Contributions:} the four milestone deliverables, a unified engine, notebooks, and an
+error-propagation analysis.
+
+\section{Background and related work}
+Rao et al.~\cite{rao2009} and Yadav et al.~\cite{yadav2010} reported language-like entropy and
+positional regularities; Farmer et al.~\cite{farmer2004} and Sproat~\cite{sproat2014} argued such
+statistics alone cannot prove language, which motivates our controls. Dixit et al.~\cite{dixit2025}
+classify 40 sign classes with YOLO and MobileNet from 232 annotated seals. We use Witten--Bell
+smoothing~\cite{wittenbell1991}, a masked encoder~\cite{devlin2019} with
+pseudo-perplexity~\cite{salazar2020} and calibration~\cite{guo2017}, YOLOv8~\cite{yolov8},
+MobileNetV3~\cite{howard2019} and Naive Bayes~\cite{russell2021aima}.
+
+\section{Method}
+\textbf{Data.} 417 sign templates~\cite{im417}, the CISI corpus (179 texts~\cite{cisi1987}) and 5,679
+transcriptions~\cite{wells2015,csvsource}, linked by a crosswalk we built between their three sign
+numberings (91.8\% agreement on 785 shared slots).
+\textbf{M1: vision.} With one image per sign, we synthesised training data by rendering templates as
+carved relief with random lighting and wear. A one-class YOLOv8n detector finds signs; a 417-way MobileNetV3 recognizer labels them;
+boxes are ordered right-to-left.
+\textbf{M2: Markov model.} A reading-order bigram matrix with START/END states and Witten--Bell
+smoothing, $P(b|a)=\frac{c(a,b)+t(a)P_{\text{uni}}(b)}{c(a)+t(a)}$ ($t(a)$: distinct successors of
+$a$). Direction is tested by comparing beginner and ender distributions against randomly flipped
+texts; collocations need $c\ge3$ and Fisher $q<0.05$.
+\textbf{M3: masked encoder.} A 2-layer Transformer ($d{=}64$, chosen from 5 configurations) predicts
+masked signs; three seeds are ensembled and temperature-scaled, and predictions are rated High, Medium or
+Low confidence. Texts are scored by pseudo-perplexity
+$\mathrm{PPPL}(x)=\exp(-\frac{1}{n}\sum_i\log p(x_i\mid x_{\setminus i}))$.
+\textbf{M4: guardrails.} Each real test text is paired with four structural controls (shuffled,
+frequency-random, uniform-random, Markov-generated). A perplexity guardrail flags
+$\mathrm{PPPL}>597$ (95th percentile of real validation texts); a multinomial Naive Bayes classifier on
+sign uni- and bigrams separates real from each control.
+\textbf{Engine.} M1 $\rightarrow$ crosswalk $\rightarrow$ M2 $\rightarrow$ M3 $\rightarrow$ M4, producing
+visualization panels and an $n$-gram report, and generates new texts by Gibbs sampling.
+
+\section{Experimental setup}
+We deduplicate the transcriptions to 3,491 unique sequences and split 80/10/10 with no shared sequence.
+M3 is scored by masking each sign in turn, with 5-fold cross-validation (12,525 predictions), against
+unigram and bidirectional Witten--Bell baselines. Metrics: top-$k$ accuracy, perplexity, calibration
+error (ECE), ROC AUC and flag rate, with McNemar's test. M1 is validated on
+synthetic data and by hand review of 140 detections on 77 real strips~\cite{isd}, on a laptop.
+
+\section{Results}
+\textbf{M1.} The detector reaches mAP50 0.995 on synthetic validation and finds signs on 76 of 77 real
+strips (precision 77--86\%). The recognizer reaches 87.9\% top-1 (97.7\% top-5) on synthetic data and
+12--17\% (40--41\%) on real stone, 50--70$\times$ chance. On held-out inscriptions rendered as images the
+pipeline reads 88\% of signs and 70\% of whole sequences correctly.
+
+\textbf{M2.} Sign P324 ends 45\% of complete CISI texts; endings are 2.4 bits more predictable than
+beginnings, and their divergence (0.89) far exceeds flipped texts ($\le$0.42, $p<10^{-4}$), confirming
+right-to-left writing. Witten--Bell fixes the 46\% of held-out transitions with zero
+probability and halves add-one's perplexity (40.8 vs.\ 77.3); 41 collocations are significant. All
+findings replicate on the larger corpus, and the jar sign's final-position share (68.4\%) matches
+Mahadevan's published 69.6\%.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lccc}
+\toprule
+Model (5-fold CV) & Top-1 (\%) & Top-5 & PPL \\
+\midrule
+Unigram frequency & 10.3\,$\pm$\,0.3 & 24.1 & 112.0 \\
+Witten--Bell bigram & 32.5\,$\pm$\,1.2 & 55.2 & 31.8 \\
+Transformer (single) & 32.2\,$\pm$\,0.8 & 54.1 & 32.1 \\
+Ensemble (ours) & \textbf{33.3}\,$\pm$\,0.6 & \textbf{55.7} & \textbf{28.8} \\
+\bottomrule
+\end{tabular}
+\caption{M3 sign restoration (mean\,$\pm$\,sd over folds; PPL: perplexity, lower is better).}
+\label{tab:m3}
+\end{table}
+
+\textbf{M3} (Table~\ref{tab:m3}). The ensemble beats both baselines (vs.\ bigram: McNemar $p=0.008$;
+lower perplexity in all 5 folds) and is well calibrated (ECE 0.035; High-confidence completions are 75\% correct). It also beats word2vec~\cite{mikolov2013} (22.0\%) and LLM2Vec~\cite{llm2vec2024} (27.6\%).
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lcccc}
+\toprule
+Test set & PPPL & Flag & NB AUC & High \\
+\midrule
+Real (held-out) & 19.6 & 6.2\% & -- & 23\% \\
+Shuffled & 224 & 21.8\% & 0.85 & 10\% \\
+Markov fakes & 54.2 & 8.1\% & 0.51 & 18\% \\
+Freq.-random & 504 & 44.5\% & 0.90 & 9\% \\
+Unif.-random & 2995 & 93.8\% & 0.98 & 8\% \\
+M1 on real photos & 1454 & 74.1\% & -- & -- \\
+\bottomrule
+\end{tabular}
+\caption{M4: median pseudo-perplexity (lower = more real), flag rate, Naive Bayes AUC vs.\ real, share
+of High-confidence guesses.}
+\label{tab:m4}
+\end{table}
+
+\textbf{M4} (Table~\ref{tab:m4}). Real inscriptions score 19.6 against 224--2,995 for noise, and Naive
+Bayes separates real from random text (AUC 0.85--0.98). The benchmark also exposes three unsupported
+kinds of claim. (i)~\emph{Confidence:} on uniform noise 8\% of guesses are still rated High,
+and none is right. (ii)~\emph{Fluent fakes:} Markov texts pass (AUC 0.51); M3's own samples score 18.2, more
+``real'' than real text, and 23\% copy training texts. (iii)~\emph{A
+proposed reading:} the corpus's Sanskrit readings are systematic (first sign predicts first phoneme
+70.8\% vs.\ 18.0\% shuffled), which shows consistency, not correctness.
+\emph{Error propagation:} M1's error rates lower M3 top-1 from 34\% to 8\%, and the guardrail
+flags 74\% of M1's real readings, catching the cascade's weakest stage.
+
+\section{Discussion and limitations}
+M2--M4 meet the brief: positional syntax is established and replicated, damaged signs are restored with
+calibrated confidence, and the benchmark separates structure from noise while marking where plausibility
+stops. With five-sign texts a bigram captures most context, so the Transformer's gain is modest.
+The main limitation is M1 recognition on real stone, where synthetic training transferred poorly;
+annotated real seals~\cite{dixit2025} are the next step.
+
+\section{Conclusion}
+We delivered an end-to-end engine and four milestones: right-to-left syntax, calibrated restoration
+of a third of damaged signs, and a benchmark showing fluency and confidence are not meaning.
+
+\section*{Individual member contributions}
+{\small
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\toprule
+Name & Contribution \\
+\midrule
+Meemansa Jha & M1 vision pipeline and evaluation. \\
+Aarush Chugh & M2 Markov analysis and smoothing. \\
+Tanmai Chekuri & M3 model; M4 guardrails; engine. \\
+\bottomrule
+\end{tabularx}}
+
+\smallskip
+\noindent All members have read this report and agree with the statement above.
+
+\section*{Generative AI disclosure}
+We used Claude (Anthropic, \texttt{claude-opus-5-5}) to audit code, write integration code and
+experiments (M2 replication, M3 cross-validation, M4, engine, demo) and help draft this report. We
+checked all output, re-ran every number, and take responsibility for it.
+
+\section*{Code availability}
+\noindent \url{\githuburl} (\texttt{run\_all.sh} reproduces every number).
+
+\begin{thebibliography}{99}
+\small
+\bibitem{russell2021aima}
+S.~Russell and P.~Norvig.
+\newblock \emph{Artificial Intelligence: A Modern Approach}, 4th edition.
+\newblock Pearson, 2021.
+\bibitem{mahadevan1977} I.~Mahadevan. \emph{The Indus Script: Texts, Concordance and Tables}. Archaeological Survey of India, 1977.
+\bibitem{wells2015} B.~K.~Wells. \emph{The Archaeology and Epigraphy of Indus Writing}. Archaeopress, 2015.
+\bibitem{cisi1987} J.~P.~Joshi and A.~Parpola. \emph{Corpus of Indus Seals and Inscriptions}, Vol.~1. Suomalainen Tiedeakatemia, 1987. Digital corpus: \url{https://github.com/mayig/indus-valley-script-corpus}.
+\bibitem{csvsource} \textbf{[TODO: source of the Wells-numbered inscription CSV, data/raw/m3\_csv/inscriptions.csv.]}
+\bibitem{im417} IM-417-150 sign images. Kaggle dataset \texttt{storesource/im-417-150}.
+\bibitem{isd} Indus-Seal-Dataset (77 inscription crops). \url{https://github.com/akksshhaay/Indus-Seal-Dataset}.
+\bibitem{rao2009} R.~P.~N.~Rao et al. Entropic evidence for linguistic structure in the Indus script. \emph{Science} 324(5931):1165, 2009.
+\bibitem{yadav2010} N.~Yadav et al. The signs of a script: Statistical analysis of the Indus script. \emph{PLoS ONE} 5(3):e9506, 2010.
+\bibitem{farmer2004} S.~Farmer, R.~Sproat and M.~Witzel. The collapse of the Indus-script thesis. \emph{Electronic Journal of Vedic Studies} 11(2), 2004.
+\bibitem{sproat2014} R.~Sproat. A statistical comparison of written language and nonlinguistic symbol systems. \emph{Language} 90(2):457--481, 2014.
+\bibitem{dixit2025} V.~Dixit et al. Deep learning in archiving Indus script and motif information. \emph{J.\ Computer Applications in Archaeology} 8(1):156--169, 2025.
+\bibitem{wittenbell1991} I.~H.~Witten and T.~C.~Bell. The zero-frequency problem. \emph{IEEE Trans.\ Information Theory} 37(4):1085--1094, 1991.
+\bibitem{devlin2019} J.~Devlin et al. BERT: Pre-training of deep bidirectional transformers for language understanding. \emph{NAACL}, 2019.
+\bibitem{salazar2020} J.~Salazar et al. Masked language model scoring. \emph{ACL}, 2020.
+\bibitem{guo2017} C.~Guo et al. On calibration of modern neural networks. \emph{ICML}, 2017.
+\bibitem{yolov8} G.~Jocher, A.~Chaurasia and J.~Qiu. Ultralytics YOLOv8, 2023. \url{https://github.com/ultralytics/ultralytics}.
+\bibitem{howard2019} A.~Howard et al. Searching for MobileNetV3. \emph{ICCV}, 2019.
+\bibitem{mikolov2013} T.~Mikolov et al. Distributed representations of words and phrases and their compositionality. \emph{NeurIPS}, 2013.
+\bibitem{llm2vec2024} P.~BehnamGhader et al. LLM2Vec: Large language models are secretly powerful text encoders. \emph{COLM}, 2024.
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,45 @@
+{
+ "real_m3_corpus": {
+  "n_inscriptions": 2575,
+  "n_sign_tokens": 10604,
+  "mean_length": 4.1180582524271845,
+  "median_length": 4.0,
+  "share_length_le_3": 0.4403883495145631,
+  "share_length_ge_10": 0.015922330097087378,
+  "distinct_signs": 686,
+  "top_sign_share": 0.0980761976612599,
+  "top10_share": 0.31412674462466994,
+  "top_sign_at_an_edge": 0.2885436893203884,
+  "adjacent_repeat_rate": 0.003861003861003861,
+  "unigram_entropy_bits": 7.052815325910945,
+  "conditional_entropy_bits": 3.6069820245708466,
+  "entropy_subsample_tokens": 5302
+ },
+ "synthetic": {
+  "n_inscriptions": 5000,
+  "n_sign_tokens": 37636,
+  "mean_length": 7.5272,
+  "median_length": 7.0,
+  "share_length_le_3": 0.052,
+  "share_length_ge_10": 0.2414,
+  "distinct_signs": 170,
+  "top_sign_share": 0.1134020618556701,
+  "top10_share": 0.526889148687427,
+  "top_sign_at_an_edge": 0.7026,
+  "adjacent_repeat_rate": 0.255484740777056,
+  "unigram_entropy_bits": 5.365082121266342,
+  "conditional_entropy_bits": 2.4674593089452963,
+  "entropy_subsample_tokens": 5302
+ },
+ "real_published_by_synthetic_authors": {
+  "source": "real-corpus totals inside the synthetic set's own sign_index.json",
+  "n_inscriptions": 3310,
+  "n_sign_tokens": 13427,
+  "distinct_signs": 641,
+  "top_sign_share": 0.102182,
+  "mean_length": 4.056495468277945
+ },
+ "synthetic_signs_cover_share_of_real_occurrences": 0.8974454457436508,
+ "all_synthetic_unique": true,
+ "ensemble_score_min": 0.8502
+}

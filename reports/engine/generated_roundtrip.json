@@ -1,0 +1,1946 @@
+{
+ "settings": {
+  "source": "data/processed/m4/generated.json",
+  "novelty_reference": "M3 train split",
+  "near_copy": "one substitution, insertion or deletion",
+  "rendered": 60,
+  "seed": 11
+ },
+ "generation": {
+  "markov": {
+   "n": 1000,
+   "copy": 0.161,
+   "near_copy": 0.322,
+   "novel": 0.517,
+   "passes_guardrail": 0.904,
+   "passes_guardrail_among_novel": 0.965183752417795,
+   "accepted_novel_and_passes": 0.499,
+   "accepted_distinct": 499,
+   "accepted_found_in_val_or_test": 0.0,
+   "median_pppl_accepted": 45.87656106900288
+  },
+  "gibbs (M3)": {
+   "n": 1000,
+   "copy": 0.23,
+   "near_copy": 0.312,
+   "novel": 0.458,
+   "passes_guardrail": 0.961,
+   "passes_guardrail_among_novel": 0.9847161572052402,
+   "accepted_novel_and_passes": 0.451,
+   "accepted_distinct": 451,
+   "accepted_found_in_val_or_test": 0.0,
+   "median_pppl_accepted": 27.175240302964365
+  }
+ },
+ "round_trip": {
+  "images": 60,
+  "count_exact": 0.9,
+  "sign_top1_on_count_matched": 0.9111111111111111,
+  "exact_sequence_on_count_matched": 0.6666666666666666,
+  "wells_identical_on_count_matched": 0.37037037037037035,
+  "note_wells": "lower than exact_sequence because several Wells signs share one IM77 template (e.g. 817/861); M1 reads IM77, so the crosswalk cannot recover which Wells variant was drawn",
+  "read_back_passes_guardrail": 0.9833333333333333,
+  "read_back_passes_guardrail_when_exact": 1.0,
+  "read_back_passes_guardrail_when_wrong": 0.9583333333333334
+ },
+ "rows": [
+  {
+   "image": "gen_000.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "550",
+    "060",
+    "031",
+    "220",
+    "740",
+    "679"
+   ],
+   "read_back": [
+    "550",
+    "060",
+    "220",
+    "740",
+    "679"
+   ],
+   "n_true": 6,
+   "n_pred": 5,
+   "verdict_read_back": "consistent with real inscriptions"
+  },
+  {
+   "image": "gen_001.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "502",
+    "220",
+    "520",
+    "742",
+    "127",
+    "032",
+    "220",
+    "705",
+    "033",
+    "388"
+   ],
+   "read_back": [
+    "502",
+    "220",
+    "520",
+    "742",
+    "127",
+    "032",
+    "220",
+    "705",
+    "033",
+    "388"
+   ],
+   "n_true": 10,
+   "n_pred": 10,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_002.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "924",
+    "820",
+    "240",
+    "798",
+    "706",
+    "033",
+    "520"
+   ],
+   "read_back": [
+    "924",
+    "820",
+    "240",
+    "798",
+    "705",
+    "003",
+    "520"
+   ],
+   "n_true": 7,
+   "n_pred": 7,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_003.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "391",
+    "301",
+    "551",
+    "220",
+    "240",
+    "590",
+    "611",
+    "740"
+   ],
+   "read_back": [
+    "391",
+    "297",
+    "550",
+    "220",
+    "240",
+    "590",
+    "611",
+    "741"
+   ],
+   "n_true": 8,
+   "n_pred": 8,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_004.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "920",
+    "060",
+    "741",
+    "592",
+    "590",
+    "900",
+    "740"
+   ],
+   "read_back": [
+    "920",
+    "060",
+    "741",
+    "592",
+    "590",
+    "900",
+    "740"
+   ],
+   "n_true": 7,
+   "n_pred": 7,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_005.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "235",
+    "062",
+    "090",
+    "405"
+   ],
+   "read_back": [
+    "235",
+    "061",
+    "090",
+    "390"
+   ],
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_006.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "235",
+    "415",
+    "226",
+    "717",
+    "161"
+   ],
+   "read_back": [
+    "235",
+    "415",
+    "226",
+    "717",
+    "161"
+   ],
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_007.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "820",
+    "002",
+    "235",
+    "231",
+    "772",
+    "740"
+   ],
+   "read_back": [
+    "820",
+    "002",
+    "235",
+    "231",
+    "772",
+    "740"
+   ],
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_008.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "817",
+    "063",
+    "877",
+    "001",
+    "565"
+   ],
+   "read_back": [
+    "858",
+    "877",
+    "032",
+    "565"
+   ],
+   "n_true": 5,
+   "n_pred": 4,
+   "verdict_read_back": "consistent with real inscriptions"
+  },
+  {
+   "image": "gen_009.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "803",
+    "235",
+    "832",
+    "740"
+   ],
+   "read_back": [
+    "803",
+    "235",
+    "832",
+    "740"
+   ],
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_010.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "817",
+    "002",
+    "806",
+    "233",
+    "804"
+   ],
+   "read_back": [
+    "861",
+    "002",
+    "803",
+    "233",
+    "804"
+   ],
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_011.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "817",
+    "002",
+    "391",
+    "595"
+   ],
+   "read_back": [
+    "861",
+    "002",
+    "391",
+    "595"
+   ],
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_012.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "550",
+    "060",
+    "741",
+    "055",
+    "740"
+   ],
+   "read_back": [
+    "550",
+    "060",
+    "741",
+    "055",
+    "740"
+   ],
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_013.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "243",
+    "820",
+    "002",
+    "592",
+    "255",
+    "267",
+    "005",
+    "408",
+    "004",
+    "390"
+   ],
+   "read_back": [
+    "243",
+    "820",
+    "002",
+    "592",
+    "255",
+    "269",
+    "035",
+    "390",
+    "004",
+    "390"
+   ],
+   "n_true": 10,
+   "n_pred": 10,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_014.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "590",
+    "390",
+    "406",
+    "140",
+    "920",
+    "740"
+   ],
+   "read_back": [
+    "590",
+    "390",
+    "390",
+    "140",
+    "920",
+    "741"
+   ],
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_015.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "817",
+    "002",
+    "032",
+    "220",
+    "233",
+    "740",
+    "400"
+   ],
+   "read_back": [
+    "861",
+    "002",
+    "?",
+    "220",
+    "233",
+    "740",
+    "400"
+   ],
+   "n_true": 7,
+   "n_pred": 7,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_016.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "817",
+    "002",
+    "416",
+    "013",
+    "240",
+    "690",
+    "151"
+   ],
+   "read_back": [
+    "861",
+    "002",
+    "416",
+    "003",
+    "240",
+    "690",
+    "151"
+   ],
+   "n_true": 7,
+   "n_pred": 7,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_017.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "861",
+    "368",
+    "554",
+    "527"
+   ],
+   "read_back": [
+    "861",
+    "368",
+    "554",
+    "527"
+   ],
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_018.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "002",
+    "066",
+    "400",
+    "798",
+    "920",
+    "741",
+    "220",
+    "480",
+    "740",
+    "090"
+   ],
+   "read_back": [
+    "002",
+    "066",
+    "400",
+    "798",
+    "920",
+    "741",
+    "220",
+    "480",
+    "740",
+    "090"
+   ],
+   "n_true": 10,
+   "n_pred": 10,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_019.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "550",
+    "921",
+    "740",
+    "741",
+    "400"
+   ],
+   "read_back": [
+    "550",
+    "921",
+    "740",
+    "741",
+    "400"
+   ],
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_020.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "100",
+    "817",
+    "151"
+   ],
+   "read_back": [
+    "100",
+    "861",
+    "151"
+   ],
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_021.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "692",
+    "690",
+    "002",
+    "003",
+    "048",
+    "740"
+   ],
+   "read_back": [
+    "692",
+    "690",
+    "019",
+    "420",
+    "049",
+    "740"
+   ],
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_022.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "692",
+    "060",
+    "706",
+    "033",
+    "220",
+    "520"
+   ],
+   "read_back": [
+    "692",
+    "060",
+    "705",
+    "033",
+    "220",
+    "520"
+   ],
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_023.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "820",
+    "002",
+    "880",
+    "060",
+    "231",
+    "705",
+    "033",
+    "520"
+   ],
+   "read_back": [
+    "?",
+    "031",
+    "880",
+    "031",
+    "233",
+    "761",
+    "031",
+    "307"
+   ],
+   "n_true": 8,
+   "n_pred": 8,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_024.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "031",
+    "235",
+    "482",
+    "752",
+    "740"
+   ],
+   "read_back": [
+    "031",
+    "235",
+    "482",
+    "760",
+    "740"
+   ],
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_025.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "072",
+    "368",
+    "002",
+    "700",
+    "222",
+    "740",
+    "527"
+   ],
+   "read_back": [
+    "070",
+    "368",
+    "002",
+    "700",
+    "222",
+    "740",
+    "527"
+   ],
+   "n_true": 7,
+   "n_pred": 7,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_026.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "233",
+    "904",
+    "032"
+   ],
+   "read_back": [
+    "233",
+    "904",
+    "033"
+   ],
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    false
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_027.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "072",
+    "741",
+    "705",
+    "033",
+    "222",
+    "740"
+   ],
+   "read_back": [
+    "070",
+    "741",
+    "705",
+    "033",
+    "222",
+    "740"
+   ],
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_028.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "634",
+    "368",
+    "904",
+    "415"
+   ],
+   "read_back": [
+    "632",
+    "368",
+    "904",
+    "415"
+   ],
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_029.png",
+   "generator": "gibbs (M3)",
+   "generated": [
+    "820",
+    "002",
+    "017",
+    "575",
+    "820"
+   ],
+   "read_back": [
+    "820",
+    "002",
+    "017",
+    "575",
+    "820"
+   ],
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_030.png",
+   "generator": "markov",
+   "generated": [
+    "260",
+    "002",
+    "233",
+    "335",
+    "760",
+    "740"
+   ],
+   "read_back": [
+    "260",
+    "002",
+    "233",
+    "335",
+    "760",
+    "740"
+   ],
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_031.png",
+   "generator": "markov",
+   "generated": [
+    "861",
+    "741",
+    "031",
+    "002",
+    "004",
+    "803",
+    "740"
+   ],
+   "read_back": [
+    "861",
+    "741",
+    "001",
+    "002",
+    "035",
+    "803",
+    "740"
+   ],
+   "n_true": 7,
+   "n_pred": 7,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    false,
+    true,
+    false,
+    true,
+    true
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_032.png",
+   "generator": "markov",
+   "generated": [
+    "368",
+    "390",
+    "032",
+    "760",
+    "740"
+   ],
+   "read_back": [
+    "368",
+    "390",
+    "032",
+    "760",
+    "740"
+   ],
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_033.png",
+   "generator": "markov",
+   "generated": [
+    "003",
+    "832",
+    "255",
+    "435",
+    "690",
+    "740"
+   ],
+   "read_back": [
+    "034",
+    "832",
+    "255",
+    "435",
+    "690",
+    "740"
+   ],
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_034.png",
+   "generator": "markov",
+   "generated": [
+    "005",
+    "407",
+    "002",
+    "892",
+    "002",
+    "070",
+    "760",
+    "740"
+   ],
+   "read_back": [
+    "005",
+    "390",
+    "002",
+    "892",
+    "002",
+    "070",
+    "760",
+    "740"
+   ],
+   "n_true": 8,
+   "n_pred": 8,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_035.png",
+   "generator": "markov",
+   "generated": [
+    "003",
+    "140",
+    "236",
+    "140",
+    "850",
+    "504",
+    "151"
+   ],
+   "read_back": [
+    "003",
+    "140",
+    "236",
+    "029",
+    "790",
+    "504",
+    "151"
+   ],
+   "n_true": 7,
+   "n_pred": 7,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_036.png",
+   "generator": "markov",
+   "generated": [
+    "740",
+    "436",
+    "690",
+    "705",
+    "002",
+    "705",
+    "742"
+   ],
+   "read_back": [
+    "740",
+    "435",
+    "690",
+    "705",
+    "002",
+    "705",
+    "742"
+   ],
+   "n_true": 7,
+   "n_pred": 7,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_037.png",
+   "generator": "markov",
+   "generated": [
+    "055",
+    "235",
+    "705",
+    "840"
+   ],
+   "read_back": [
+    "001",
+    "243",
+    "705",
+    "840"
+   ],
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    false,
+    false,
+    true,
+    true
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_038.png",
+   "generator": "markov",
+   "generated": [
+    "692",
+    "060",
+    "502",
+    "031",
+    "480",
+    "003",
+    "645",
+    "927",
+    "740"
+   ],
+   "read_back": [
+    "692",
+    "060",
+    "502",
+    "480",
+    "033",
+    "645",
+    "904",
+    "740"
+   ],
+   "n_true": 9,
+   "n_pred": 8,
+   "verdict_read_back": "consistent with real inscriptions"
+  },
+  {
+   "image": "gen_039.png",
+   "generator": "markov",
+   "generated": [
+    "744",
+    "240",
+    "151"
+   ],
+   "read_back": [
+    "742",
+    "240",
+    "?"
+   ],
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    false
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_040.png",
+   "generator": "markov",
+   "generated": [
+    "634",
+    "705",
+    "909",
+    "368"
+   ],
+   "read_back": [
+    "632",
+    "705",
+    "909",
+    "368"
+   ],
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_041.png",
+   "generator": "markov",
+   "generated": [
+    "144",
+    "590",
+    "390"
+   ],
+   "read_back": [
+    "144",
+    "?",
+    "390"
+   ],
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    false,
+    true
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_042.png",
+   "generator": "markov",
+   "generated": [
+    "820",
+    "046",
+    "032",
+    "740",
+    "400"
+   ],
+   "read_back": [
+    "?",
+    "390",
+    "700",
+    "400"
+   ],
+   "n_true": 5,
+   "n_pred": 4,
+   "verdict_read_back": "consistent with real inscriptions"
+  },
+  {
+   "image": "gen_043.png",
+   "generator": "markov",
+   "generated": [
+    "803",
+    "742",
+    "798",
+    "415",
+    "100",
+    "413"
+   ],
+   "read_back": [
+    "803",
+    "742",
+    "798",
+    "415",
+    "100",
+    "413"
+   ],
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_044.png",
+   "generator": "markov",
+   "generated": [
+    "575",
+    "220",
+    "384",
+    "740",
+    "234",
+    "125",
+    "752",
+    "740",
+    "400"
+   ],
+   "read_back": [
+    "575",
+    "220",
+    "384",
+    "740",
+    "234",
+    "125",
+    "750",
+    "740",
+    "400"
+   ],
+   "n_true": 9,
+   "n_pred": 9,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_045.png",
+   "generator": "markov",
+   "generated": [
+    "806",
+    "154",
+    "171",
+    "032",
+    "240",
+    "904",
+    "740"
+   ],
+   "read_back": [
+    "803",
+    "156",
+    "171",
+    "625",
+    "240",
+    "904",
+    "740"
+   ],
+   "n_true": 7,
+   "n_pred": 7,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_046.png",
+   "generator": "markov",
+   "generated": [
+    "032",
+    "031",
+    "741",
+    "032",
+    "790"
+   ],
+   "read_back": [
+    "625",
+    "740",
+    "032",
+    "851"
+   ],
+   "n_true": 5,
+   "n_pred": 4,
+   "verdict_read_back": "flagged: noise-like"
+  },
+  {
+   "image": "gen_047.png",
+   "generator": "markov",
+   "generated": [
+    "156",
+    "400",
+    "637",
+    "740"
+   ],
+   "read_back": [
+    "156",
+    "400",
+    "632",
+    "740"
+   ],
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_048.png",
+   "generator": "markov",
+   "generated": [
+    "817",
+    "002",
+    "156",
+    "033",
+    "111",
+    "590",
+    "390"
+   ],
+   "read_back": [
+    "869",
+    "002",
+    "156",
+    "033",
+    "111",
+    "590",
+    "?"
+   ],
+   "n_true": 7,
+   "n_pred": 7,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "exact": false,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_049.png",
+   "generator": "markov",
+   "generated": [
+    "222",
+    "533",
+    "861",
+    "002",
+    "900",
+    "740"
+   ],
+   "read_back": [
+    "222",
+    "531",
+    "861",
+    "002",
+    "900",
+    "740"
+   ],
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_050.png",
+   "generator": "markov",
+   "generated": [
+    "892",
+    "296",
+    "002",
+    "032",
+    "032",
+    "630",
+    "100",
+    "740",
+    "032",
+    "930"
+   ],
+   "read_back": [
+    "892",
+    "297",
+    "002",
+    "002",
+    "032",
+    "001",
+    "632",
+    "100",
+    "740",
+    "032",
+    "?",
+    "930"
+   ],
+   "n_true": 10,
+   "n_pred": 12,
+   "verdict_read_back": "consistent with real inscriptions"
+  },
+  {
+   "image": "gen_051.png",
+   "generator": "markov",
+   "generated": [
+    "861",
+    "002",
+    "240",
+    "831",
+    "233",
+    "235",
+    "798",
+    "740"
+   ],
+   "read_back": [
+    "861",
+    "002",
+    "240",
+    "831",
+    "233",
+    "235",
+    "798",
+    "740"
+   ],
+   "n_true": 8,
+   "n_pred": 8,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_052.png",
+   "generator": "markov",
+   "generated": [
+    "892",
+    "202",
+    "400",
+    "798",
+    "740",
+    "111"
+   ],
+   "read_back": [
+    "892",
+    "202",
+    "400",
+    "798",
+    "740",
+    "111"
+   ],
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_053.png",
+   "generator": "markov",
+   "generated": [
+    "220",
+    "798",
+    "236"
+   ],
+   "read_back": [
+    "220",
+    "798",
+    "236"
+   ],
+   "n_true": 3,
+   "n_pred": 3,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_054.png",
+   "generator": "markov",
+   "generated": [
+    "820",
+    "002",
+    "806",
+    "154",
+    "840",
+    "740",
+    "400"
+   ],
+   "read_back": [
+    "820",
+    "002",
+    "803",
+    "156",
+    "840",
+    "740",
+    "400"
+   ],
+   "n_true": 7,
+   "n_pred": 7,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": false
+  },
+  {
+   "image": "gen_055.png",
+   "generator": "markov",
+   "generated": [
+    "033",
+    "413",
+    "575",
+    "226",
+    "740"
+   ],
+   "read_back": [
+    "033",
+    "413",
+    "575",
+    "226",
+    "740"
+   ],
+   "n_true": 5,
+   "n_pred": 5,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_056.png",
+   "generator": "markov",
+   "generated": [
+    "005",
+    "900",
+    "060",
+    "235",
+    "176",
+    "740"
+   ],
+   "read_back": [
+    "005",
+    "900",
+    "060",
+    "235",
+    "176",
+    "740"
+   ],
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_057.png",
+   "generator": "markov",
+   "generated": [
+    "900",
+    "740",
+    "382",
+    "740"
+   ],
+   "read_back": [
+    "900",
+    "740",
+    "382",
+    "740"
+   ],
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_058.png",
+   "generator": "markov",
+   "generated": [
+    "243",
+    "798",
+    "233",
+    "740"
+   ],
+   "read_back": [
+    "243",
+    "798",
+    "233",
+    "740"
+   ],
+   "n_true": 4,
+   "n_pred": 4,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": true,
+   "wells_identical": true
+  },
+  {
+   "image": "gen_059.png",
+   "generator": "markov",
+   "generated": [
+    "032",
+    "798",
+    "234",
+    "760",
+    "740",
+    "400"
+   ],
+   "read_back": [
+    "?",
+    "798",
+    "234",
+    "760",
+    "740",
+    "400"
+   ],
+   "n_true": 6,
+   "n_pred": 6,
+   "verdict_read_back": "consistent with real inscriptions",
+   "sign_correct": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "exact": false,
+   "wells_identical": false
+  }
+ ]
+}

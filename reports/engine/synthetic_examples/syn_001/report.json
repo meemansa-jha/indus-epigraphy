@@ -1,0 +1,150 @@
+{
+ "source": "M1 automatic reading (not verified)",
+ "input": "/sessions/rcw-01kgwsngicncmv17twejjspe/mnt/indus-epigraphy/data/processed/engine_synthetic/images/syn_001.png",
+ "numbering_in": "im77",
+ "reading_order_wells": [
+  "204",
+  "003"
+ ],
+ "reading_order_im77": [
+  "56",
+  "102/103"
+ ],
+ "reading_order_parpola": [
+  "P083",
+  "P123"
+ ],
+ "conversion_notes": [],
+ "m1": [
+  {
+   "top5": [
+    [
+     56,
+     0.9417818188667297
+    ],
+    [
+     299,
+     0.006330456119030714
+    ],
+    [
+     301,
+     0.003966426011174917
+    ],
+    [
+     84,
+     0.002093804534524679
+    ],
+    [
+     20,
+     0.0020539795514196157
+    ]
+   ],
+   "det_conf": 0.702
+  },
+  {
+   "top5": [
+    [
+     102,
+     0.8175470232963562
+    ],
+    [
+     95,
+     0.06335059553384781
+    ],
+    [
+     89,
+     0.05589432641863823
+    ],
+    [
+     104,
+     0.021879175677895546
+    ],
+    [
+     416,
+     0.0037945967633277178
+    ]
+   ],
+   "det_conf": 0.643
+  }
+ ],
+ "m2_positional_ngrams": [
+  {
+   "transition": "START -> 204",
+   "probability": 0.00044688914867675625,
+   "bits": 11.12779536578609,
+   "known_collocation": false
+  },
+  {
+   "transition": "204 -> 003",
+   "probability": 0.00484203357197235,
+   "bits": 7.690171202444173,
+   "known_collocation": false
+  },
+  {
+   "transition": "003 -> END",
+   "probability": 0.08222562135386621,
+   "bits": 3.6042681846677787,
+   "known_collocation": false
+  }
+ ],
+ "m2_total_bits": 22.42223475289804,
+ "m2_roles": [
+  "mixed / rare",
+  "mixed / rare"
+ ],
+ "m3_per_sign": [
+  {
+   "position_stored": 0,
+   "sign": "003",
+   "prob": 0.008586118929088116,
+   "rating": "Low",
+   "alternatives": [
+    [
+     "032",
+     0.063
+    ],
+    [
+     "705",
+     0.062
+    ],
+    [
+     "740",
+     0.038
+    ]
+   ]
+  },
+  {
+   "position_stored": 1,
+   "sign": "204",
+   "prob": 0.000545536691788584,
+   "rating": "Low",
+   "alternatives": [
+    [
+     "003",
+     0.094
+    ],
+    [
+     "031",
+     0.077
+    ],
+    [
+     "645",
+     0.072
+    ]
+   ]
+  }
+ ],
+ "m4": {
+  "pseudo_perplexity": 462.0506305541105,
+  "threshold": 597.3559948269265,
+  "percentile_among_real": 0.9090909090909091,
+  "median_real": 19.62264119723226,
+  "median_shuffled": 224.2886880132998,
+  "median_frequency_random": 504.1069526458581,
+  "verdict": "consistent with real inscriptions"
+ },
+ "truth_wells_reading": [
+  "204",
+  "034"
+ ]
+}

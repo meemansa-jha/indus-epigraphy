@@ -1,0 +1,552 @@
+{
+ "strips": 77,
+ "scored": 54,
+ "verdicts": {
+  "flagged: noise-like": 40,
+  "not enough readable signs (need >= 2)": 23,
+  "consistent with real inscriptions": 14
+ },
+ "flag_rate": 0.7407407407407407,
+ "median_pppl": 1453.7383204118141,
+ "rows": [
+  {
+   "image": "1text.jpg",
+   "n_signs": 8,
+   "verdict": "flagged: noise-like",
+   "pppl": 3715.2659720227302,
+   "unmapped": 3
+  },
+  {
+   "image": "10text.jpg",
+   "n_signs": 2,
+   "verdict": "flagged: noise-like",
+   "pppl": 1148.79603276418,
+   "unmapped": 0
+  },
+  {
+   "image": "103text.jpg",
+   "n_signs": 5,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 1
+  },
+  {
+   "image": "104text.jpg",
+   "n_signs": 2,
+   "verdict": "consistent with real inscriptions",
+   "pppl": 24.416172352153733,
+   "unmapped": 0
+  },
+  {
+   "image": "105text.jpg",
+   "n_signs": 3,
+   "verdict": "flagged: noise-like",
+   "pppl": 1080.9502358416455,
+   "unmapped": 0
+  },
+  {
+   "image": "106text.jpg",
+   "n_signs": 3,
+   "verdict": "flagged: noise-like",
+   "pppl": 3204.9097219418995,
+   "unmapped": 0
+  },
+  {
+   "image": "107text.jpg",
+   "n_signs": 5,
+   "verdict": "flagged: noise-like",
+   "pppl": 5444.361389357697,
+   "unmapped": 0
+  },
+  {
+   "image": "108text.jpg",
+   "n_signs": 4,
+   "verdict": "consistent with real inscriptions",
+   "pppl": 92.13029256607275,
+   "unmapped": 0
+  },
+  {
+   "image": "109text.jpg",
+   "n_signs": 6,
+   "verdict": "flagged: noise-like",
+   "pppl": 614.7037897109383,
+   "unmapped": 2
+  },
+  {
+   "image": "11text.jpg",
+   "n_signs": 2,
+   "verdict": "flagged: noise-like",
+   "pppl": 2687.0141240475223,
+   "unmapped": 0
+  },
+  {
+   "image": "111text.jpg",
+   "n_signs": 5,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 1
+  },
+  {
+   "image": "114text.jpg",
+   "n_signs": 3,
+   "verdict": "flagged: noise-like",
+   "pppl": 1655.9780851907672,
+   "unmapped": 0
+  },
+  {
+   "image": "115text.jpg",
+   "n_signs": 5,
+   "verdict": "flagged: noise-like",
+   "pppl": 1228.6592400403815,
+   "unmapped": 0
+  },
+  {
+   "image": "12text.jpg",
+   "n_signs": 5,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 1
+  },
+  {
+   "image": "13text.jpg",
+   "n_signs": 3,
+   "verdict": "flagged: noise-like",
+   "pppl": 2860.751396766228,
+   "unmapped": 1
+  },
+  {
+   "image": "14text.jpg",
+   "n_signs": 3,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 2
+  },
+  {
+   "image": "15text.jpg",
+   "n_signs": 5,
+   "verdict": "flagged: noise-like",
+   "pppl": 664.0978502175062,
+   "unmapped": 0
+  },
+  {
+   "image": "16text.jpg",
+   "n_signs": 6,
+   "verdict": "flagged: noise-like",
+   "pppl": 3179.6804528568805,
+   "unmapped": 0
+  },
+  {
+   "image": "17text.jpg",
+   "n_signs": 3,
+   "verdict": "consistent with real inscriptions",
+   "pppl": 170.38202311063205,
+   "unmapped": 0
+  },
+  {
+   "image": "18text.jpg",
+   "n_signs": 9,
+   "verdict": "flagged: noise-like",
+   "pppl": 1269.7885553618999,
+   "unmapped": 5
+  },
+  {
+   "image": "19text.jpg",
+   "n_signs": 5,
+   "verdict": "flagged: noise-like",
+   "pppl": 1565.4712277516767,
+   "unmapped": 1
+  },
+  {
+   "image": "2text.jpg",
+   "n_signs": 6,
+   "verdict": "consistent with real inscriptions",
+   "pppl": 223.97641624905927,
+   "unmapped": 1
+  },
+  {
+   "image": "20text.jpg",
+   "n_signs": 6,
+   "verdict": "flagged: noise-like",
+   "pppl": 6770.867578753484,
+   "unmapped": 0
+  },
+  {
+   "image": "21text.jpg",
+   "n_signs": 4,
+   "verdict": "flagged: noise-like",
+   "pppl": 17689.17965562798,
+   "unmapped": 1
+  },
+  {
+   "image": "22text.jpg",
+   "n_signs": 1,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 0
+  },
+  {
+   "image": "23text.jpg",
+   "n_signs": 4,
+   "verdict": "consistent with real inscriptions",
+   "pppl": 304.6585914766926,
+   "unmapped": 1
+  },
+  {
+   "image": "24text.jpg",
+   "n_signs": 7,
+   "verdict": "flagged: noise-like",
+   "pppl": 5633.140954859883,
+   "unmapped": 3
+  },
+  {
+   "image": "25text.jpg",
+   "n_signs": 5,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 2
+  },
+  {
+   "image": "26text.jpeg",
+   "n_signs": 6,
+   "verdict": "flagged: noise-like",
+   "pppl": 834.5273986501211,
+   "unmapped": 0
+  },
+  {
+   "image": "27text.jpg",
+   "n_signs": 5,
+   "verdict": "flagged: noise-like",
+   "pppl": 1923.9674582034465,
+   "unmapped": 1
+  },
+  {
+   "image": "28text.jpg",
+   "n_signs": 5,
+   "verdict": "flagged: noise-like",
+   "pppl": 2801.1515146552133,
+   "unmapped": 0
+  },
+  {
+   "image": "29text.jpg",
+   "n_signs": 3,
+   "verdict": "consistent with real inscriptions",
+   "pppl": 20.70793523801198,
+   "unmapped": 0
+  },
+  {
+   "image": "3text.jpg",
+   "n_signs": 4,
+   "verdict": "flagged: noise-like",
+   "pppl": 1888.6872251770005,
+   "unmapped": 1
+  },
+  {
+   "image": "30text.jpg",
+   "n_signs": 3,
+   "verdict": "flagged: noise-like",
+   "pppl": 917.3433017025901,
+   "unmapped": 0
+  },
+  {
+   "image": "31text.jpg",
+   "n_signs": 3,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 0
+  },
+  {
+   "image": "32text.jpg",
+   "n_signs": 3,
+   "verdict": "consistent with real inscriptions",
+   "pppl": 24.416777688650185,
+   "unmapped": 0
+  },
+  {
+   "image": "33text.jpg",
+   "n_signs": 2,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 1
+  },
+  {
+   "image": "34text.jpg",
+   "n_signs": 3,
+   "verdict": "consistent with real inscriptions",
+   "pppl": 313.8368734751568,
+   "unmapped": 0
+  },
+  {
+   "image": "36text.jpg",
+   "n_signs": 1,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 0
+  },
+  {
+   "image": "37text.jpg",
+   "n_signs": 4,
+   "verdict": "flagged: noise-like",
+   "pppl": 1718.1609339050592,
+   "unmapped": 0
+  },
+  {
+   "image": "38text.jpg",
+   "n_signs": 2,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 0
+  },
+  {
+   "image": "39text.jpg",
+   "n_signs": 5,
+   "verdict": "flagged: noise-like",
+   "pppl": 3606.0513922297396,
+   "unmapped": 0
+  },
+  {
+   "image": "4text.jpg",
+   "n_signs": 4,
+   "verdict": "flagged: noise-like",
+   "pppl": 1593.962963202923,
+   "unmapped": 2
+  },
+  {
+   "image": "40text.jpg",
+   "n_signs": 5,
+   "verdict": "flagged: noise-like",
+   "pppl": 4247.366958819015,
+   "unmapped": 1
+  },
+  {
+   "image": "41text.jpg",
+   "n_signs": 5,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 4
+  },
+  {
+   "image": "42text.jpg",
+   "n_signs": 3,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 1
+  },
+  {
+   "image": "43text.jpg",
+   "n_signs": 2,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 0
+  },
+  {
+   "image": "5text.jpg",
+   "n_signs": 4,
+   "verdict": "consistent with real inscriptions",
+   "pppl": 395.89055118224496,
+   "unmapped": 1
+  },
+  {
+   "image": "53text.jpg",
+   "n_signs": 3,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 1
+  },
+  {
+   "image": "6text.jpg",
+   "n_signs": 4,
+   "verdict": "flagged: noise-like",
+   "pppl": 3306.7670388671427,
+   "unmapped": 0
+  },
+  {
+   "image": "64text.jpg",
+   "n_signs": 6,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 2
+  },
+  {
+   "image": "65text.jpg",
+   "n_signs": 2,
+   "verdict": "flagged: noise-like",
+   "pppl": 969.0209495680539,
+   "unmapped": 0
+  },
+  {
+   "image": "68text.jpg",
+   "n_signs": 6,
+   "verdict": "flagged: noise-like",
+   "pppl": 3591.914760175578,
+   "unmapped": 2
+  },
+  {
+   "image": "69text.jpg",
+   "n_signs": 0,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 0
+  },
+  {
+   "image": "7text.jpg",
+   "n_signs": 4,
+   "verdict": "flagged: noise-like",
+   "pppl": 6409.742611090973,
+   "unmapped": 0
+  },
+  {
+   "image": "70text.jpg",
+   "n_signs": 3,
+   "verdict": "flagged: noise-like",
+   "pppl": 11096.25637504872,
+   "unmapped": 0
+  },
+  {
+   "image": "72text.jpg",
+   "n_signs": 5,
+   "verdict": "consistent with real inscriptions",
+   "pppl": 133.21361645359428,
+   "unmapped": 1
+  },
+  {
+   "image": "73text.jpg",
+   "n_signs": 3,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 0
+  },
+  {
+   "image": "76text.jpg",
+   "n_signs": 3,
+   "verdict": "flagged: noise-like",
+   "pppl": 41104.69322176501,
+   "unmapped": 0
+  },
+  {
+   "image": "77text.jpg",
+   "n_signs": 3,
+   "verdict": "flagged: noise-like",
+   "pppl": 6368.411427961519,
+   "unmapped": 0
+  },
+  {
+   "image": "78text.jpg",
+   "n_signs": 4,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 1
+  },
+  {
+   "image": "79text.jpg",
+   "n_signs": 3,
+   "verdict": "flagged: noise-like",
+   "pppl": 1677.1785701509682,
+   "unmapped": 0
+  },
+  {
+   "image": "8text.jpg",
+   "n_signs": 5,
+   "verdict": "flagged: noise-like",
+   "pppl": 5388.6089142424635,
+   "unmapped": 1
+  },
+  {
+   "image": "80text.jpg",
+   "n_signs": 4,
+   "verdict": "flagged: noise-like",
+   "pppl": 1342.0054130719516,
+   "unmapped": 0
+  },
+  {
+   "image": "81text.jpg",
+   "n_signs": 1,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 0
+  },
+  {
+   "image": "82text.jpg",
+   "n_signs": 7,
+   "verdict": "flagged: noise-like",
+   "pppl": 1839.3100900821478,
+   "unmapped": 1
+  },
+  {
+   "image": "83text.jpg",
+   "n_signs": 3,
+   "verdict": "flagged: noise-like",
+   "pppl": 666.6000911649685,
+   "unmapped": 0
+  },
+  {
+   "image": "84text.jpg",
+   "n_signs": 1,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 0
+  },
+  {
+   "image": "85text.jpg",
+   "n_signs": 3,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 1
+  },
+  {
+   "image": "87text.jpg",
+   "n_signs": 7,
+   "verdict": "consistent with real inscriptions",
+   "pppl": 110.88881991389138,
+   "unmapped": 3
+  },
+  {
+   "image": "88text.jpg",
+   "n_signs": 4,
+   "verdict": "consistent with real inscriptions",
+   "pppl": 541.7531467819296,
+   "unmapped": 0
+  },
+  {
+   "image": "9text.jpg",
+   "n_signs": 5,
+   "verdict": "flagged: noise-like",
+   "pppl": 1240.0538436915133,
+   "unmapped": 1
+  },
+  {
+   "image": "90text.jpg",
+   "n_signs": 3,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 0
+  },
+  {
+   "image": "94text.jpg",
+   "n_signs": 7,
+   "verdict": "consistent with real inscriptions",
+   "pppl": 72.82132128707549,
+   "unmapped": 4
+  },
+  {
+   "image": "95text.jpg",
+   "n_signs": 5,
+   "verdict": "flagged: noise-like",
+   "pppl": 952.2281473507801,
+   "unmapped": 0
+  },
+  {
+   "image": "96text.jpg",
+   "n_signs": 10,
+   "verdict": "consistent with real inscriptions",
+   "pppl": 581.5716782640657,
+   "unmapped": 2
+  },
+  {
+   "image": "97text.jpg",
+   "n_signs": 1,
+   "verdict": "not enough readable signs (need >= 2)",
+   "pppl": null,
+   "unmapped": 0
+  }
+ ]
+}

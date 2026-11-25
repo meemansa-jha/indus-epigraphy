@@ -1,0 +1,122 @@
+{
+  "corpus": {
+    "texts": 179,
+    "sign_tokens": 984,
+    "distinct_signs": 181,
+    "complete_single_line_texts": 154,
+    "P000_breaks": 19,
+    "two_line_texts": 7
+  },
+  "step1_sanity": {
+    "mean_length": 5.57,
+    "median_length": 5.0,
+    "signs_for_50pct": 17,
+    "signs_for_80pct": 58,
+    "top67_coverage_pct": 83.4,
+    "hapax_signs": 77
+  },
+  "step2_positions": {
+    "distinct_beginners": 86,
+    "distinct_enders": 30,
+    "top_beginner": "P385",
+    "top_beginner_share_pct": 17.5,
+    "top_ender": "P324",
+    "top_ender_share_pct": 45.3,
+    "entropy_begin_bits": 5.63,
+    "entropy_end_bits": 3.22,
+    "flip_test_jsd": 0.891,
+    "flip_test_null_max": 0.418,
+    "flip_test_p": "< 0.0001"
+  },
+  "step3_matrix": {
+    "transitions": 1123,
+    "cells": 33124,
+    "observed_cells": 645,
+    "zero_cells_pct": 98.05,
+    "single_observation_rows": 73,
+    "rows_mle_100pct_certain": 84
+  },
+  "step4_smoothing": {
+    "MLE (no smoothing)": {
+      "zero_prob_events": 516,
+      "perplexity": "infinite (fails)"
+    },
+    "Add-one (Laplace)": {
+      "zero_prob_events": 0,
+      "perplexity": 77.3
+    },
+    "Witten-Bell": {
+      "zero_prob_events": 0,
+      "perplexity": 40.8
+    }
+  },
+  "step5_direction": {
+    "forward_vs_backward_training_bits": [
+      2.5861,
+      2.5861
+    ],
+    "forward_vs_backward_heldout_perplexity": [
+      40.43,
+      40.39
+    ],
+    "entropy_pos1_from_start": 5.31,
+    "entropy_pos1_from_end": 2.94,
+    "entropy_pos2_from_start": 4.8,
+    "pos1_gap_p": "< 0.0001",
+    "roles": {
+      "OPENER": [
+        "P385",
+        "P378",
+        "P256"
+      ],
+      "ENDER": [
+        "P324",
+        "P086",
+        "P217",
+        "P013"
+      ],
+      "MEDIAL": [
+        "P122",
+        "P050",
+        "P120",
+        "P060",
+        "P062"
+      ]
+    }
+  },
+  "step6_collocations": {
+    "distinct_pairs": 529,
+    "scored_pairs": 48,
+    "significant": 41,
+    "top5_by_npmi": [
+      "P316 \u2192 P147",
+      "P324 \u2192 P013",
+      "P268 \u2192 P268",
+      "P123 \u2192 P004",
+      "P385 \u2192 P122"
+    ],
+    "frequent_pairs_one_order_only": "17 of 22",
+    "one_order_significant": 7
+  },
+  "step7_error_propagation": {
+    "deletion_rate": 0.247,
+    "insertion_rate": 0.123,
+    "at_M1_accuracy_17pct": {
+      "share_P324_end": 0.061,
+      "direction_detected": 0.12,
+      "entropy_gap": 0.125,
+      "colloc_recovered": 0.0
+    },
+    "perfect_recognition_with_M1_detection": {
+      "share_P324_end": 0.306,
+      "entropy_gap": 1.22,
+      "colloc_recovered": 0.44
+    },
+    "first_lost_at": {
+      "P324 still the dominant ender (share \u2265 25%)": "75%",
+      "Fixed direction detected in \u2265 90% of runs": "45%",
+      "Start \u2212 end gap \u2265 1 bit": "75%",
+      "At least half of the collocations recovered": "100%"
+    }
+  }
+}

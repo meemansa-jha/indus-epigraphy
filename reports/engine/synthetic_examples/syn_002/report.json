@@ -1,0 +1,208 @@
+{
+ "source": "M1 automatic reading (not verified)",
+ "input": "/sessions/rcw-01kgwsngicncmv17twejjspe/mnt/indus-epigraphy/data/processed/engine_synthetic/images/syn_002.png",
+ "numbering_in": "im77",
+ "reading_order_wells": [
+  "235",
+  "705",
+  "033"
+ ],
+ "reading_order_im77": [
+  "65",
+  "336",
+  "89"
+ ],
+ "reading_order_parpola": [
+  "P060",
+  "P316",
+  "P147"
+ ],
+ "conversion_notes": [
+  "im77 336 -> Wells 705 (ambiguous: 704/705/706/707)"
+ ],
+ "m1": [
+  {
+   "top5": [
+    [
+     65,
+     0.9543548226356506
+    ],
+    [
+     66,
+     0.026858802884817123
+    ],
+    [
+     75,
+     0.001579802599735558
+    ],
+    [
+     318,
+     0.0013714845990762115
+    ],
+    [
+     60,
+     0.0007140152738429606
+    ]
+   ],
+   "det_conf": 0.897
+  },
+  {
+   "top5": [
+    [
+     336,
+     0.899052083492279
+    ],
+    [
+     340,
+     0.009792591445147991
+    ],
+    [
+     237,
+     0.00557037815451622
+    ],
+    [
+     94,
+     0.0034921090118587017
+    ],
+    [
+     329,
+     0.0024490561336278915
+    ]
+   ],
+   "det_conf": 0.913
+  },
+  {
+   "top5": [
+    [
+     89,
+     0.8068034052848816
+    ],
+    [
+     95,
+     0.06265787780284882
+    ],
+    [
+     102,
+     0.0344790518283844
+    ],
+    [
+     106,
+     0.01771721988916397
+    ],
+    [
+     96,
+     0.012307104654610157
+    ]
+   ],
+   "det_conf": 0.853
+  }
+ ],
+ "m2_positional_ngrams": [
+  {
+   "transition": "START -> 235",
+   "probability": 0.01896455924364168,
+   "bits": 5.720550347507276,
+   "known_collocation": false
+  },
+  {
+   "transition": "235 -> 705",
+   "probability": 0.03484116892635461,
+   "bits": 4.843063162394633,
+   "known_collocation": true
+  },
+  {
+   "transition": "705 -> 033",
+   "probability": 0.37338625390102115,
+   "bits": 1.4212592787155018,
+   "known_collocation": true
+  },
+  {
+   "transition": "033 -> END",
+   "probability": 0.12146734769251014,
+   "bits": 3.0413595477485815,
+   "known_collocation": false
+  }
+ ],
+ "m2_total_bits": 15.026232336365993,
+ "m2_roles": [
+  "mixed / rare",
+  "mixed / rare",
+  "mixed / rare"
+ ],
+ "m3_per_sign": [
+  {
+   "position_stored": 0,
+   "sign": "033",
+   "prob": 0.0953959971666336,
+   "rating": "Low",
+   "alternatives": [
+    [
+     "167",
+     0.158
+    ],
+    [
+     "740",
+     0.102
+    ],
+    [
+     "033",
+     0.095
+    ]
+   ]
+  },
+  {
+   "position_stored": 1,
+   "sign": "705",
+   "prob": 0.5080477595329285,
+   "rating": "High",
+   "alternatives": [
+    [
+     "705",
+     0.508
+    ],
+    [
+     "706",
+     0.244
+    ],
+    [
+     "711",
+     0.027
+    ]
+   ]
+  },
+  {
+   "position_stored": 2,
+   "sign": "235",
+   "prob": 0.07362044602632523,
+   "rating": "Low",
+   "alternatives": [
+    [
+     "590",
+     0.09
+    ],
+    [
+     "235",
+     0.074
+    ],
+    [
+     "803",
+     0.069
+    ]
+   ]
+  }
+ ],
+ "m4": {
+  "pseudo_perplexity": 6.544185798746254,
+  "threshold": 597.3559948269265,
+  "percentile_among_real": 0.22077922077922077,
+  "median_real": 19.62264119723226,
+  "median_shuffled": 224.2886880132998,
+  "median_frequency_random": 504.1069526458581,
+  "verdict": "consistent with real inscriptions"
+ },
+ "truth_wells_reading": [
+  "235",
+  "705",
+  "033"
+ ]
+}

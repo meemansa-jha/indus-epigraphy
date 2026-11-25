@@ -1,0 +1,57 @@
+[
+ {
+  "cfg": {
+   "d": 64,
+   "layers": 1,
+   "heads": 4,
+   "ff": 128,
+   "dropout": 0.1
+  },
+  "val_nll": 3.4688,
+  "epochs": 34
+ },
+ {
+  "cfg": {
+   "d": 64,
+   "layers": 2,
+   "heads": 4,
+   "ff": 128,
+   "dropout": 0.2
+  },
+  "val_nll": 3.2937,
+  "epochs": 54
+ },
+ {
+  "cfg": {
+   "d": 128,
+   "layers": 1,
+   "heads": 4,
+   "ff": 256,
+   "dropout": 0.2
+  },
+  "val_nll": 3.4235,
+  "epochs": 32
+ },
+ {
+  "cfg": {
+   "d": 128,
+   "layers": 2,
+   "heads": 4,
+   "ff": 256,
+   "dropout": 0.2
+  },
+  "val_nll": 3.4027,
+  "epochs": 30
+ },
+ {
+  "cfg": {
+   "d": 128,
+   "layers": 2,
+   "heads": 4,
+   "ff": 256,
+   "dropout": 0.3
+  },
+  "val_nll": 3.372,
+  "epochs": 33
+ }
+]

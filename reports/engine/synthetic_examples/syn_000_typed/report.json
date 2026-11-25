@@ -1,0 +1,185 @@
+{
+ "source": "typed / transcribed sequence",
+ "input": "['626', '861', '002', '315', '520']",
+ "numbering_in": "wells",
+ "reading_order_wells": [
+  "626",
+  "861",
+  "002",
+  "315",
+  "520"
+ ],
+ "reading_order_im77": [
+  "247",
+  "267",
+  "99/100",
+  "199",
+  "211"
+ ],
+ "reading_order_parpola": [
+  "P380",
+  "P385",
+  "P122",
+  "P293",
+  "P217"
+ ],
+ "conversion_notes": [],
+ "m1": null,
+ "m2_positional_ngrams": [
+  {
+   "transition": "START -> 626",
+   "probability": 5.2929603813056705e-05,
+   "bits": 14.20556561923745,
+   "known_collocation": false
+  },
+  {
+   "transition": "626 -> 861",
+   "probability": 0.005913802387469334,
+   "bits": 7.401698248742106,
+   "known_collocation": false
+  },
+  {
+   "transition": "861 -> 002",
+   "probability": 0.6808573300634614,
+   "bits": 0.5545755738506263,
+   "known_collocation": true
+  },
+  {
+   "transition": "002 -> 315",
+   "probability": 0.00012479506082577522,
+   "bits": 12.96815154361187,
+   "known_collocation": false
+  },
+  {
+   "transition": "315 -> 520",
+   "probability": 0.006025740846485444,
+   "bits": 7.374645657453246,
+   "known_collocation": false
+  },
+  {
+   "transition": "520 -> END",
+   "probability": 0.7518494313192233,
+   "bits": 0.41148432452541334,
+   "known_collocation": false
+  }
+ ],
+ "m2_total_bits": 42.9161209674207,
+ "m2_roles": [
+  "mixed / rare",
+  "opener",
+  "mixed / rare",
+  "mixed / rare",
+  "ender"
+ ],
+ "m3_per_sign": [
+  {
+   "position_stored": 0,
+   "sign": "520",
+   "prob": 0.2309347689151764,
+   "rating": "Medium",
+   "alternatives": [
+    [
+     "740",
+     0.447
+    ],
+    [
+     "520",
+     0.231
+    ],
+    [
+     "368",
+     0.05
+    ]
+   ]
+  },
+  {
+   "position_stored": 1,
+   "sign": "315",
+   "prob": 0.00010438427852932364,
+   "rating": "Low",
+   "alternatives": [
+    [
+     "220",
+     0.169
+    ],
+    [
+     "240",
+     0.163
+    ],
+    [
+     "233",
+     0.152
+    ]
+   ]
+  },
+  {
+   "position_stored": 2,
+   "sign": "002",
+   "prob": 0.5133039355278015,
+   "rating": "High",
+   "alternatives": [
+    [
+     "002",
+     0.513
+    ],
+    [
+     "741",
+     0.071
+    ],
+    [
+     "368",
+     0.063
+    ]
+   ]
+  },
+  {
+   "position_stored": 3,
+   "sign": "861",
+   "prob": 0.17035789787769318,
+   "rating": "Low",
+   "alternatives": [
+    [
+     "817",
+     0.194
+    ],
+    [
+     "861",
+     0.17
+    ],
+    [
+     "820",
+     0.152
+    ]
+   ]
+  },
+  {
+   "position_stored": 4,
+   "sign": "626",
+   "prob": 7.301589357666671e-05,
+   "rating": "Low",
+   "alternatives": [
+    [
+     "920",
+     0.055
+    ],
+    [
+     "416",
+     0.05
+    ],
+    [
+     "817",
+     0.029
+    ]
+   ]
+  }
+ ],
+ "m4": {
+  "pseudo_perplexity": 91.73694266343972,
+  "threshold": 597.3559948269265,
+  "percentile_among_real": 0.7435064935064936,
+  "median_real": 19.62264119723226,
+  "median_shuffled": 224.2886880132998,
+  "median_frequency_random": 504.1069526458581,
+  "verdict": "consistent with real inscriptions"
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "T1_consistency": {
+  "inscriptions_with_own_reading": 1763,
+  "distinct_texts": 1749,
+  "texts_with_conflicting_readings": 4
+ },
+ "T2_naive_bayes_phonetic_anchoring": {
+  "n_inscriptions": 1666,
+  "majority_baseline": 0.20284697508896798,
+  "acc_reading_initial_sign": 0.708277139414864,
+  "acc_reading_final_sign": 0.21788854722986456,
+  "acc_random_sign": 0.22689575803348258,
+  "acc_shuffled_readings_mean": 0.1796787955620291,
+  "acc_shuffled_readings_p95": 0.192066677455899,
+  "p_value_vs_shuffled": 0.004975124378109453
+ },
+ "T3_freedom_per_sign": {
+  "signs_tested": 16,
+  "median_distinct_first_sounds": 2.0,
+  "median_top_share": 0.9387871853546911,
+  "signs_with_one_value": 3,
+  "detail": [
+   {
+    "sign": "820",
+    "n": 100,
+    "distinct_first_sounds": 3,
+    "top_sound": "r",
+    "top_share": 0.97,
+    "sounds": {
+     "r": 97,
+     "f": 2,
+     "a": 1
+    }
+   },
+   {
+    "sign": "861",
+    "n": 92,
+    "distinct_first_sounds": 2,
+    "top_sound": "r",
+    "top_share": 0.9782608695652174,
+    "sounds": {
+     "r": 90,
+     "f": 2
+    }
+   },
+   {
+    "sign": "817",
+    "n": 89,
+    "distinct_first_sounds": 2,
+    "top_sound": "r",
+    "top_share": 0.9775280898876404,
+    "sounds": {
+     "r": 87,
+     "f": 2
+    }
+   },
+   {
+    "sign": "920",
+    "n": 62,
+    "distinct_first_sounds": 2,
+    "top_sound": "d",
+    "top_share": 0.9193548387096774,
+    "sounds": {
+     "d": 57,
+     "D": 5
+    }
+   },
+   {
+    "sign": "032",
+    "n": 52,
+    "distinct_first_sounds": 3,
+    "top_sound": "s",
+    "top_share": 0.4807692307692308,
+    "sounds": {
+     "s": 25,
+     "S": 14,
+     "h": 13
+    }
+   },
+   {
+    "sign": "235",
+    "n": 39,
+    "distinct_first_sounds": 2,
+    "top_sound": "a",
+    "top_share": 0.8461538461538461,
+    "sounds": {
+     "a": 33,
+     "A": 6
+    }
+   },
+   {
+    "sign": "692",
+    "n": 38,
+    "distinct_first_sounds": 2,
+    "top_sound": "k",
+    "top_share": 0.9210526315789473,
+    "sounds": {
+     "k": 35,
+     "K": 3
+    }
+   },
+   {
+    "sign": "031",
+    "n": 33,
+    "distinct_first_sounds": 3,
+    "top_sound": "A",
+    "top_share": 0.5151515151515151,
+    "sounds": {
+     "A": 17,
+     "a": 15,
+     "g": 1
+    }
+   },
+   {
+    "sign": "240",
+    "n": 30,
+    "distinct_first_sounds": 1,
+    "top_sound": "m",
+    "top_share": 1.0,
+    "sounds": {
+     "m": 30
+    }
+   },
+   {
+    "sign": "140",
+    "n": 30,
+    "distinct_first_sounds": 1,
+    "top_sound": "t",
+    "top_share": 1.0,
+    "sounds": {
+     "t": 30
+    }
+   },
+   {
+    "sign": "033",
+    "n": 26,
+    "distinct_first_sounds": 2,
+    "top_sound": "j",
+    "top_share": 0.9615384615384616,
+    "sounds": {
+     "j": 25,
+     "I": 1
+    }
+   },
+   {
+    "sign": "550",
+    "n": 26,
+    "distinct_first_sounds": 2,
+    "top_sound": "a",
+    "top_share": 0.8461538461538461,
+    "sounds": {
+     "a": 22,
+     "A": 4
+    }
+   },
+   {
+    "sign": "003",
+    "n": 25,
+    "distinct_first_sounds": 1,
+    "top_sound": "j",
+    "top_share": 1.0,
+    "sounds": {
+     "j": 25
+    }
+   },
+   {
+    "sign": "803",
+    "n": 24,
+    "distinct_first_sounds": 3,
+    "top_sound": "S",
+    "top_share": 0.5,
+    "sounds": {
+     "S": 12,
+     "s": 8,
+     "h": 4
+    }
+   },
+   {
+    "sign": "590",
+    "n": 23,
+    "distinct_first_sounds": 2,
+    "top_sound": "v",
+    "top_share": 0.9565217391304348,
+    "sounds": {
+     "v": 22,
+     "r": 1
+    }
+   }
+  ]
+ }
+}

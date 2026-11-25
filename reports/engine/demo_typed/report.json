@@ -1,0 +1,127 @@
+{
+ "source": "typed / transcribed sequence",
+ "input": "P385 P122 P324",
+ "numbering_in": "parpola",
+ "reading_order_wells": [
+  "861",
+  "002",
+  "740"
+ ],
+ "reading_order_im77": [
+  "267",
+  "99/100",
+  "342"
+ ],
+ "reading_order_parpola": [
+  "P385",
+  "P122",
+  "P324"
+ ],
+ "conversion_notes": [
+  "parpola P385 -> Wells 861 (ambiguous: 817/861)"
+ ],
+ "m1": null,
+ "m2_positional_ngrams": [
+  {
+   "transition": "START -> 861",
+   "probability": 0.041189244804329284,
+   "bits": 4.601588514819757,
+   "known_collocation": false
+  },
+  {
+   "transition": "861 -> 002",
+   "probability": 0.6808573300634614,
+   "bits": 0.5545755738506263,
+   "known_collocation": true
+  },
+  {
+   "transition": "002 -> 740",
+   "probability": 0.016620652331532204,
+   "bits": 5.910879183298373,
+   "known_collocation": false
+  },
+  {
+   "transition": "740 -> END",
+   "probability": 0.6811651195715988,
+   "bits": 0.5539235340774125,
+   "known_collocation": false
+  }
+ ],
+ "m2_total_bits": 11.62096680604617,
+ "m2_roles": [
+  "opener",
+  "mixed / rare",
+  "ender"
+ ],
+ "m3_per_sign": [
+  {
+   "position_stored": 0,
+   "sign": "740",
+   "prob": 0.0067151812836527824,
+   "rating": "Low",
+   "alternatives": [
+    [
+     "416",
+     0.086
+    ],
+    [
+     "236",
+     0.075
+    ],
+    [
+     "136",
+     0.068
+    ]
+   ]
+  },
+  {
+   "position_stored": 1,
+   "sign": "002",
+   "prob": 0.1948501616716385,
+   "rating": "Low",
+   "alternatives": [
+    [
+     "002",
+     0.195
+    ],
+    [
+     "760",
+     0.092
+    ],
+    [
+     "798",
+     0.039
+    ]
+   ]
+  },
+  {
+   "position_stored": 2,
+   "sign": "861",
+   "prob": 0.2523953318595886,
+   "rating": "Medium",
+   "alternatives": [
+    [
+     "817",
+     0.309
+    ],
+    [
+     "861",
+     0.252
+    ],
+    [
+     "820",
+     0.217
+    ]
+   ]
+  }
+ ],
+ "m4": {
+  "pseudo_perplexity": 14.467274550473178,
+  "threshold": 597.3559948269265,
+  "percentile_among_real": 0.4090909090909091,
+  "median_real": 19.62264119723226,
+  "median_shuffled": 224.2886880132998,
+  "median_frequency_random": 504.1069526458581,
+  "verdict": "consistent with real inscriptions"
+ }
+}

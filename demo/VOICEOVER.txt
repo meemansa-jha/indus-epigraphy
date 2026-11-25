@@ -1,0 +1,17 @@
+This is the Indus Epigraphy engine. One program runs all four milestones: reading signs from an image, positional statistics, a masked-sign model, and a guardrail that checks every output.
+
+We start with a real inscription the models never saw in training. Milestone 2 labels each sign's role: sign 817 typically opens a text, and the jar sign, 740, typically ends one. Milestone 4 compares the whole text with real inscriptions, and its verdict is: consistent with real inscriptions.
+
+Now we damage the inscription one sign at a time and ask Milestone 3 to restore it. It recovers four of the seven signs, and it is most confident exactly where it is right: the jar sign at 94%. Across all held-out data it gets the first guess right a third of the time, and its confidence is calibrated.
+
+Same signs, wrong order. The score gets about eight times worse. It still stays under the guardrail's threshold, because the guardrail is built to catch noise, not every reordering.
+
+Random signs from the sign list are rejected immediately as noise-like.
+
+Now the same inscription as an image: a synthetic carved strip. Milestone 1 finds each sign, matches it to Mahadevan's sign list, and orders the signs right to left. All seven are read correctly. The numbering is converted automatically, and the rest of the pipeline gives the same verdict as the typed text.
+
+This is a real photograph. Detection works: the signs are boxed. Recognition does not: on real photos only twelve to seventeen percent of signs are identified correctly. The guardrail catches it. The reading is flagged as noise-like, with a score nearly two hundred times worse than typical real text.
+
+Finally, generation. Milestone 3 writes a new inscription. We check that it is not a copy of any training text, or even one sign away from one. The guardrail accepts it as statistically realistic. We draw it as a carved strip, and the engine reads it back correctly. Passing the guardrail means the text is statistically like real inscriptions. It does not mean it has a meaning.
+
+All the code, notebooks and results are in our public repository. The report explains what works, what doesn't, and why.
